@@ -1,48 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
+.heading {
+    font-family: "roboto";
+    font-size: 20px;
+    padding: 5px;
+    color: #151765;
+}
+
+.background-image {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/podcasts-bg.png");
+    height: 30vh;
+    background-size: cover;
+}
 
 
-.logo {
-    border-color: #4b6cc1;
-    border-style: solid;
-    border-width: 2px;
-    font-size: 24px;
-    font-weight: 700;
-    font-family: "Roboto";
-    padding-left: 10px;
-    padding-right: 10px;
+.first-image {
+    height: 20vh;
+    width: 30vw;
+    margin: 20px;
+}
+
+.heading-one {
+    font-family: "roboto";
+    font-size: 15px;
+    font-weight: bold;
+    color: #151765;
+    text-align: center;
+}
+
+.paragraph-one {
+    font-family: "roboto";
+    font-size: 13px;
+    text-align: center;
 }
 
 .bg-container {
-    background-color: #191a1d;
-    height: 100vh;
+    background-color: #151765;
+    width: 100vw;
+    height: 30vh;
 }
 
-.image {
-    width: 280px;
-    margin-bottom: 10px;
+.image-1 {
+    height: 23vh;
+    width: 30vw;
+    margin: 20px;
 }
 
-.heading {
+.matter {
+    padding: 10px;
+    margin: 10px;
+}
+
+.heading-1 {
+    font-family: "roboto";
+    font-size: 12px;
     color: white;
-    font-size: 45px;
-    font-family: "Roboto";
-    font-weight: 300;
+
 }
 
-
-.discription {
-    color: #9aa5b1;
-    font-size: 24px;
-    font-family: "Roboto";
-}
-
-.button {
+.paragraph-1 {
+    font-family: "roboto";
+    font-size: 20px;
+    font-weight: 600;
     color: white;
-    background-color: #4b6cc1;
-    font-family: "Roboto";
-    height: 46px;
-    width: 128px;
-    border-radius: 8px;
-    border-width: 0px;
+}
+
+.matter-1 {
+    padding: 5px;
+    margin: 10px;
+}
+
+.heading-2 {
+    font-family: "roboto";
+    font-size: 18px;
+    color: #151765;
+    font-weight: bold;
+
+}
+
+.paragraph-2 {
+    font-family: "roboto";
+    font-size: 12px;
+    font-weight: 600;
+    color: #151765;
+}
+
+.count {
+    font-family: "roboto";
+    font-size: 10px;
+    font-weight: 600;
+    color: #151765;
+}
+
+.btn {
+    height: 40px;
+    width: 80px;
+    background-color: #151765;
+    border-radius: 20px;
+    color: white;
+    margin: 20px;
 }

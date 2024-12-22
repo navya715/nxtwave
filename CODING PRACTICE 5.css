@@ -1,53 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
 
-.vr-image-logo {
-    height: 40px;
-    width: 50px;
-}
-
-#menu-options-style1 {
-    color: #323f4b;
-    font-family: "Roboto";
-    font-size: 15px;
-}
-
-#menu-options-style2 {
-    color: #323f4b;
-    font-family: "Roboto";
-    font-size: 15px;
-}
-
-#menu-options-style3 {
-    color: #323f4b;
-    font-family: "Roboto";
-    font-size: 15px;
-}
-
-#menu-options-style4 {
-    color: #323f4b;
-    font-family: "Roboto";
-    font-size: 15px;
-}
-
-.virtual-reality-background-container {
-    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-banner-bg.png");
+.bg-container {
     height: 100vh;
     background-size: cover;
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/arvrbg.png");
 }
 
-.virtual-reality-main-heading {
-    font-family: "Roboto";
-    font-size: 38px;
-    color: white;
-    font-weight: bold;
+.advanced-technologies-card {
+    text-align: center;
+    height: 250px;
+    width: 250px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    margin: 10px;
 }
 
-.custom-button {
-    height: 36px;
-    width: 120px;
-    font-family: "Roboto";
-    font-size: 15px;
-    color: white;
-    background-color: #1a2137;
-    border-radius: 5px;
+.learn-more-button {
+    color: #171f46;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d7dfe9;
+    margin-right: 5px;
+    border-radius: 8px;
+}
+
+.save-draft-button {
+    color: #ffffff;
+    background-color: #5752ab;
+    border-width: 0px;
+    margin-left: 5px;
+    border-radius: 8px;
 }

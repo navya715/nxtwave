@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.music-page-background {
+    background-color: #03174c;
+}
+
+.sleep-music-card {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/moon-stars-bg.png");
+    background-size: cover;
+    height: 60vh;
+    text-align: center;
+    padding: 75px;
+}
+
+.heading-details {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: "Bree Serif";
+}
+
+.paragraph-details {
+    color: #ffffff;
+    font-size: 12px;
+    font-family: "bree serif";
+}
+
+.night-island-card {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/moon-bg.png");
+    height: 150px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 40px;
+    margin-bottom: 0px;
+}
+
+.text-night-island {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "bree serif";
+    padding: 60px;
+}
+
+.paragraph-night-island {
+    color: #ffffff;
+    font-size: 12px;
+    font-family: "bree serif";
+    padding-left: 20px;
+}
+
+.get-started-button {
+    color: #ffffff;
+    font-size: 13px;
+    font-family: "bree serif";
+    background-color: #8e97fd;
+    border-radius: 15px;
+    border-width: 0px;
+    height: 25px;
+    width: 90px;
+    margin-bottom: 100px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.music-details-page-bg {
+    background-color: #03174c;
+}
+
+.music-details-card {
+    height: 45vh;
+    width: 100vw;
+
+}
+
+.music-details-page-heading {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "bree serif";
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.music-details-page-paragraph {
+    color: #98a1bd;
+    font-size: 12px;
+    font-family: "bree serif";
+    padding-left: 15px;
+
+}
+
+.related-text {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: "bree serif";
+    padding-left: 15px;
+}
+
+.related-card {
+    height: 90px;
+    width: 150px;
+    padding-left: 15px;
+}
+
+.music-card-text-details {
+    color: #ffffff;
+    font-size: 13px;
+    font-family: "bree serif";
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.back-button {
+    color: #ffffff;
+    font-size: 13px;
+    font-family: "bree serif";
+    background-color: #8e97fd;
+    border-radius: 15px;
+    border-width: 0px;
+    height: 28px;
+    width: 90px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+
+}

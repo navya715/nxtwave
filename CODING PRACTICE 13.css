@@ -1,37 +1,297 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
-.testimonials-container {
-    background-color: #1f2933;
+.homepage-image-view {
+
+    background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/software-developer-img.png');
+
+    height: 50vh;
+
+    background-size: 90vh;
+
 }
 
-.testimonial-heading {
-    color: #cced00;
-    font-size: 25px;
+
+
+.diwali-top-session {
+
+    background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-bg.png');
+
+    height: 30vh;
+
+    background-size: cover;
+
 }
 
-.testimonials-card {
-    background-color: #323f4b;
-    padding: 20px;
-}
 
-.testimonial-para {
+
+.diwali-top-session-heading {
+
     color: white;
-    font-size: 40px;
+
+    font-family: "Caveat";
+
+    font-size: 35px;
+
+    width: 200px;
+
+    padding: 10px;
+
+}
+
+
+
+.bottom-session {
+
+    background-color: #e6f6ff;
+
+    height: 90vh;
+
+    text-align: center;
+
+}
+
+
+
+.card-item {
+
+    background-color: white;
+
+    width: 150px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    padding: 8px;
+
+    margin: 10px;
+
+}
+
+
+
+.card-image {
+
+    width: 200px;
+
+    height: 200px;
+
+}
+
+
+
+.card-heading {
+
+    color: red;
+
+    font-size: 15px;
+
+    font-family: "Roboto";
+
     font-weight: bold;
+
 }
 
-.testimonialscard-image {
-    height: 100px;
-    width: 100px;
-    border-radius: 40px;
+
+
+.text-decoration {
+
+    text-decoration: underline;
+
 }
 
-.testimonials-card-description {
-    color: #9aa5b1;
-    font-size: 18px;
+
+
+
+
+
+
+.background-img-foodorder {
+
+    background-image: url(' https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/foodbg.png');
+
+    height: 100vh;
+
+    background-size: cover;
+
 }
 
-.testimonals-card-personname {
-    color: white;
+
+
+.main-heading {
+
+    font-family: "Bree Serif";
+
+}
+
+
+
+.para-button {
+
+    font-family: "Roboto";
+
+}
+
+
+
+.button-background {
+
+    background-color: #ffffff;
+
+}
+
+
+
+.background-textcolor {
+
+    background-color: #f6c56e;
+
+}
+
+
+
+
+
+
+
+
+
+.backgroundimage {
+
+    background-image: url(' https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/arvrbg.png');
+
+    height: 100vh;
+
+    background-size: cover;
+
+}
+
+
+
+.mainheading {
+
+    color: #5752ab;
+
+}
+
+
+
+.paracolor {
+
+    color: #323f4b;
+
+}
+
+
+
+.button1color {
+
+    text-align: center;
+
+    height: 36px;
+
+    width: 138px;
+
+    background-color: #ffffff;
+
+    padding: 10px;
+
+    margin: 10px;
+
+    border-radius: 5vh;
+
+}
+
+
+
+.button2color {
+
+    text-align: center;
+
+    height: 36px;
+
+    width: 138px;
+
+    background-color: #171f46;
+
+    padding: 10px;
+
+    margin: 10px;
+
+    border-radius: 5vh;
+
+}
+
+
+
+.cardbackgroundcolor {
+
+    background-color: #ffffff;
+
+}
+
+
+
+
+
+.backgroundimageeduc {
+
+    background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/newsbg.png');
+
+    height: 100vh;
+
+    background-size: cover;
+
+}
+
+
+
+.cardbackgroundcolor {
+
+    background-color: #ffffff;
+
+    padding: 10px;
+
+    border-top-left-radius: 10px;
+
+}
+
+
+
+.textcolorheading {
+
+    color: #323f4b;
+
+    font-family: 'Roboto';
+
     font-size: 20px;
+
+}
+
+
+
+.textcolorpara {
+
+    color: #7b8794;
+
+    font-family: 'Roboto';
+
+    font-size: 14px;
+
+}
+
+
+
+.colorbutton {
+
+    text-align: center;
+
+    background-color: #0d1a26;
+
+    padding: 10px;
+
+    border: 20px;
+
+    border-top-left-radius: 10px;
+
 }

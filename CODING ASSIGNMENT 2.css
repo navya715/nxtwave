@@ -1,21 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
 
-.covid-card-container {
-    border-radius: 12px;
-    padding: 10px;
-    margin: 10px;
+.main-page {
+    background-image: url("https://assets.ccbp.in/frontend/static-website/yoga-bg.png");
+    background-color: #ffedcb;
+    background-size: cover;
+    width: 300px;
+    height: 600px;
 }
 
-.covid-card-image {
-    width: 48px;
-    height: 48px;
-    margin: 10px;
+.yogi-heading {
+    font-size: 24px;
+    text-align: center;
+    color: #132d84;
+    padding: 25px 0px 0px 0px;
+    font-weight: bold;
 }
 
-.symptom-text {
-    color: #ffffff;
-    font-family: "Roboto";
-    font-size: 12px;
-    font-weight: 500;
-    margin: 5px;
+.yoga-girl {
+    height: 250px;
+    margin: 60px 0px 0px 60px;
+
 }

@@ -2,42 +2,50 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 order-1 order-md-2 d-flex flex-column justify-content-center"></div>
-            <div class="col-12 col-md-6 order-2 order-md-1 d-none d-md-block"></div>
-            <div class="about-me-section pt-5 pb-5">
-                <h1>Facts</h1>
-                <h1>About me</h1>
-                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-about-me-img.png" class="about-me-section-image mb-3 d-md-none" />
-                <p>My name is jenny wilson</p>
+    <div class="music-page-background" id="sectionMusicHomePage">
+        <div class="sleep-music-card">
+            <h1 class="heading-details">Sleep Music</h1>
+            <p class="paragraph-details">Soothing bedtime music to help you fall into a deep and natural sleep</p>
+        </div>
+        <div class="d-flex flex-column justify-content-center">
+            <div class="night-island-card">
+                <h1 class="text-night-island">Night Island</h1>
             </div>
-            <div class="col-12 col-md-6 order-2 order-md-1 d-none d-md-block">
-                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-about-me-img.png" class="about-me-section-image" />
+            <div class="text-align-center">
+                <P class="paragraph-night-island">Non-stop 8-hour mixes of our most popular sleep audio</P>
+                <button class="get-started-button" onclick="display('sectionMusicDetailsPage')">Get Started</button>
             </div>
         </div>
     </div>
 
-    <div class="skills-section pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1>Skills :</h1>
-                </div>
-                <div class="shadow skills-card text-center mb-3"><img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-html-img.png" class="skills-section-image" /></div>
-                <div class="shadow skills-card text-center mb-3"><img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-css-img.png" class="skills-section-image" /></div>
-                <div class="col-6 col-md-3"><img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-bootstrap-img.png" class="skills-section-image" /></div>
-                <div class="col-6 col-md-3"><img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-js-img.png" class="skills-section-image" /></div>
+    <div class="music-details-page-bg" id="sectionMusicDetailsPage">
+        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/clouds-img.png" class="music-details-card" />
+        <h1 class="music-details-page-heading">Night Island</h1>
+        <p class="music-details-page-paragraph">Ease the mind into a restful night's sleep with these deep,amblent tones.</p>
+        <p class="music-details-page-paragraph">45 MIN SLEEP MUSIC</p>
+        <h1 class="related-text">Related</h1>
+        <div class="d-flex">
+            <div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/moon-clouds-img.png" class="related-card" />
+                <h1 class="music-card-text-details">Moon Clouds</h1>
+                <P class="music-details-page-paragraph">55 MIN SLEEP MUSIC</P>
+            </div>
+            <div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sweet-sleep-img.png" class="related-card" />
+                <h1 class="music-card-text-details">Sweet Sleep</h1>
+                <P class="music-details-page-paragraph">60 MIN SLEEP MUSIC</P>
             </div>
         </div>
+        <button class="back-button" onclick="display('sectionMusicHomePage')">Back</button>
     </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
 </body>
 
 </html>

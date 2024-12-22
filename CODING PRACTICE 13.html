@@ -1,71 +1,257 @@
 <!DOCTYPE html>
+
 <html>
 
+
+
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </head>
 
+
+
 <body>
-    <div class="testimonials-container pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="testimonial-heading mb-3">Testimonials</h1>
-                    <p class="testimonial-para mb-3">Our Members Says</p>
-                </div>
-                <div class="col-12">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="testimonials-card text-center">
-                                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-testimonials-1-img.png" class="testimonialscard-image" alt="...">
-                                    <p class="testimonials-card-description">
-                                        Jenny is one of the best hard working developer
-                                    </p>
-                                    <p class="testimonals-card-personname">
-                                        Goutam, Founder of Cococpay Company</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="testimonials-card text-center">
-                                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-testimonials-2-img.png" class="testimonialscard-image" alt="...">
-                                    <p class="testimonials-card-description">
-                                        I have worked with jenny on two complete projects, and in both cases</p>
-                                    <p class="testimonals-card-personname">
-                                        Rakesh, Co-Dveloper in Verify Company
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="testimonials-card text-center">
-                                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-testimonials-3-img.png" class="testimonialscard-image" alt="...">
-                                    <p class="testimonials-card-description">
-                                        I have worked with jenny on two complete projects, and in both cases</p>
-                                    <p class="testimonals-card-personname">
-                                        - Riya, Co-Founder of Cococpay Company</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="mt-3 text-right">
-                                    <a href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a href="#carouselExampleIndicators" role="button" data-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+    <div id="sectiontotalhomepagedetailedview">
+
+        <div class="homepage-image-view">
+
         </div>
+
+        <div>
+
+            <h1>My Projects</h1>
+
+            <p> These are a few of my static website
+
+                projects that I have developed using HTML,CSS and BootStrap
+
+            </p>
+
+        </div>
+
+        <div class="d-flex flex-row justify-content-center">
+
+            <div class="card-item" onclick="display('sectionadvtechviewpage')">
+
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/advanced-technologies-img.png" class="card-image" />
+
+            </div>
+
+            <div class="card-item " onclick="display('sectiondiwaliimagedetailedview')">
+
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-img.png" class="card-image" />
+
+            </div>
+
+        </div>
+
+
+
+        <div class="d-flex flex-row justify-content-center" onclick="display('sectionsectionfooddeleverydetailedview')">
+
+            <div class="card-item">
+
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/food-img.png" class="card-image" />
+
+            </div>
+
+            <div class="card-item" onclick="display('sectionnewspaperimagedetailedview')">
+
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/news-paper-img.png" class="card-image" />
+
+            </div>
+
+        </div>
+
     </div>
+
+
+
+    <div id="sectionadvtechviewpage">
+
+        <div class="backgroundimage d-flex flex-column justify-content-end">
+
+            <div class="cardbackgroundcolor">
+
+                <h1 class="mainheading">Advanced Technologies</h1>
+
+                <p class="paracolor">Machinery and equipment developed from the application of scientific knoledge</p>
+
+
+
+                <div class="d-flex flex-row">
+
+                    <button class="button1color">learn more</button>
+
+                    <button class="button2color" onclick="display('totalhomepagedetailedview')">back</button>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <div id="sectiondiwaliimagedetailedview">
+
+
+
+        <div class="diwali-top-session">
+
+            <h1 class="diwali-top-session-heading">Celebrate Diwali with your friends and famaly</h1>
+
+            <div class="bottom-session">
+
+                <div class="d-flex flex-row justify-content-center">
+
+                    <div class="card-item">
+
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/lamp-img.png" class="card-image" />
+
+                        <h1 class="card-heading">Diwali Lamp</h1>
+
+                        <p class="card-heading text-decoration">lamp cost:360Rs</p>
+
+                    </div>
+
+                    <div class="card-item ">
+
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diya-img.png" class="card-image" />
+
+                        <h1 class="card-heading">Divya</h1>
+
+                        <p class="card-heading text-decoration"> cost:100Rs</p>
+
+                    </div>
+
+                </div>
+
+                <div class="d-flex flex-row justify-content-center">
+
+                    <div class="card-item">
+
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firework-img.png" class="card-image" />
+
+                        <h1 class="card-heading">Match Box</h1>
+
+                        <p class="card-heading text-decoration">cost:75Rs</p>
+
+                    </div>
+
+                    <div class="card-item ">
+
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firecracker-img.png" class="card-image" />
+
+                        <h1 class="card-heading">1000 VALA</h1>
+
+                        <p class="card-heading text-decoration"> cost:700Rs</p>
+
+                    </div>
+
+                </div>
+
+                <center> <button class="btn-primary">View More</button></center>
+
+                <center> <button class="btn-primary" onclick="display('totalhomepagedetailedview')">back</button></center>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="sectionsectionfooddeleverydetailedview">
+
+        <div class="background-img-foodorder d-flex flex-column justify-content-end">
+
+            <div class="background-textcolor">
+
+                <h1 class=" main-heading ">Happy Meals</h1>
+
+                <p class=" para-button">Discover the best foods over the 1,000
+
+                    restaurants
+
+                </p>
+
+                <button class="para-button button-background">Book Now</button>
+
+                <button class="para-button button-background" onclick="display('totalhomepagedetailedview')">back</button>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <div id="sectionnewspaperimagedetailedview">
+
+        <div class="backgroundimageeduc d-flex flex-column justify-content-end">
+
+            <div class="cardbackgroundcolor">
+
+                <h1 class="textcolorheading">All educational Institutions in Assam to
+
+                    reopen from November 2 </h1>
+
+                <p class="textcolorpara">Uttar Pradesh's Gautam Buddh Nagar recorded 107 new
+
+                    Covid-19 cases on Saturday,pushing the district'Saturdays
+
+                    Infection tally to 15,803,official data showed .
+
+                </p>
+
+                <p class="textcolorpara">
+
+                    The number of active cases came down further to 1,384 from 1,477 on
+
+                    Friday and 1,523 on Thursday, according to the data
+
+                    relesed by the UP Health Department for a 24-hour
+
+                    period.
+
+                </p>
+
+                <button class="colorbutton">Learn more</button>
+
+                <button class="colorbutton" onclick="display('totalhomepagedetailedview')">back</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
 </body>
+
+
 
 </html>

@@ -1,0 +1,425 @@
+Tourism
+
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <div class="card">
+        <h1 class="main-heading">TOURISM</h1>
+        <p class="paragraph">Plan your trip whenever you want to go</p>
+        <button>Get Started</button>
+    </div>
+  </body>
+</html>
+
+
+.card {
+    background-color: lightblue;
+    text-align: right;
+}
+
+.main-heading {
+    color: black;
+    font-family:'Roboto';
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+.paragraph {
+    color: black;
+    text-decoration:overline;
+    font-family: 'Roboto';
+}
+
+
+Sea
+
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+      <div class="card">
+        <h1 class="main-heading">
+            sea
+        </h1>
+        </div>
+         <div class="card-sea">
+        <h1 class="main-heading-sea">
+            sea
+        </h1>
+        </div>
+        <div class="card-sea1">
+        <h1 class="main-heading-sea1">
+            sea
+        </h1>
+        </div>
+      
+  </body>
+</html>
+
+
+.card {
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-image: url("https://assets.ccbp.in/frontend/static-website/beach-1-img.png");
+}
+
+.main-heading {
+    color: white;
+}
+
+
+.card-sea {
+    text-align: center;
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    background-image: url("https://assets.ccbp.in/frontend/static-website/beach-2-img.png");
+
+}
+
+.main-heading-sea{
+    color: white;
+}
+
+.card-sea1 {
+    text-align: center;
+    height:300px;
+    width: 300px;
+    background-size: cover;
+    background-image: url("https://assets.ccbp.in/frontend/static-website/beach-3-img.png");
+
+}
+
+.main-heading-sea1{
+    color: white;
+}
+
+
+  Scuba Diving
+
+<!DOCTYPE html>
+<html>
+  <head>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <div class="bg-container d-flex flex-column justify-content-start">
+        <h1 class="main-heading">
+            Scuba Diving
+        </h1>
+        <p class="paragraph">
+            Scuba diving is a mode of underwater diving
+            where the diver uses a self-contained underwater
+                breathing apparatus(Scuba)
+                </p>
+            </div>
+  </body>
+</html>
+
+.bg-container {
+  background-image: url("https://assets.ccbp.in/frontend/static-website/scuba-diving-bg.png");
+  height: 100vh;
+  background-size: cover;
+  text-align: center;
+}
+
+.main-heading {
+  font-family: "Roboto";
+  color:white ;
+}
+.paragraph {
+  font-family: "Roboto";
+  color: white;
+}
+
+
+
+Viewport Width
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <div class="box-green">
+          <p class="paragraph">25vw</p>
+        </div>
+      <div class="box-blue">
+          <p class="paragraph1">50vw</p>
+        </div>
+      <div class="box-orange">
+          <p class="paragraph2">75vw</p>
+          </div>
+      <div class="box-red">
+          <p class="paragraph3">100vw</p>
+          </div>
+  </body>
+</html>
+
+.box-green{
+  width: 25vw;
+  color: white;
+}
+
+.paragraph {
+    font-family: "Roboto";
+    background: green;
+}
+
+
+.box-blue{
+  width: 50vw;
+  color: white;
+}
+
+.paragraph1{
+    font-family: "Roboto";
+    background:blue;
+}
+
+.box-orange{
+  width: 75vw;
+  color: white;
+}
+
+.paragraph2{
+    font-family: "Roboto";
+    background:orange;
+}
+
+.box-red{
+  width: 100vw;
+  color: white;
+}
+
+.paragraph3 {
+    font-family: "Roboto";
+    background:red;
+}
+
+
+Viewport Height
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="d-flex flex-row justify-content-center">
+    <div class="box-green">
+        <p class="paragraph">25vh</p>
+    </div>
+    <div class="box-blue">
+        <p class="paragraph1">50vh</p>
+    </div>
+    <div class="box-orange ">
+        <p class="paragraph2">75vh</p>
+    </div>
+    <div class="box-red">
+        <p class="paragraph3">100vh</p>
+    </div>
+    </div>
+</body>
+
+</html>
+
+.box-green {
+    height: 25vh;
+    color: white;
+}
+
+.paragraph {
+    font-family: "Roboto";
+    background: green;
+}
+
+
+.box-blue {
+    height: 50vh;
+    color: white;
+}
+
+.paragraph1 {
+    font-family: "Roboto";
+    background: blue;
+}
+
+.box-orange {
+    height: 75vh;
+    color: white;
+}
+
+.paragraph2 {
+    font-family: "Roboto";
+    background: orange;
+}
+
+.box-red {
+    height: 100vh;
+    color: white;
+}
+
+.paragraph3 {
+    font-family: "Roboto";
+    background: red;
+}
+
+
+Happy meals
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div>
+        <div class="text">
+      <h1>happy Meals</h1>
+      <p>discover the best foods</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+.text{
+    text-align: center;
+    background-color: blue;
+    background-size: cover;
+    font-family: 'Caveat';
+    color: white;
+}
+
+
+Buton styles
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet"href="style.css">
+  </head>
+  <body>
+    <div>
+<h1>Leaf</h1>
+<button class="leaf-button">leaf</button>
+</div>
+<h1>button styles</h1>
+<button class="readybutton">ready</button>
+<button class="setbutton">set</button>
+<button class="gobutton">go</button>
+</div>
+  </body>
+</html>
+
+
+.leaf-button{
+background-color:#0c6b58;
+border-top-left-radius:40px;
+border-bottom-right-radius:40px;
+border-top-right-radius:20px;
+height:50px;
+width:50px;
+border-width:0;
+color:#ffffff;
+}
+
+.readybutton{
+background-color:#ffd0b5;
+border-style:dashed;
+border-width:2px;
+border-color:#841003;
+height:30px;
+width:70px;
+color:#841003;
+}
+
+.setbutton{
+background-color:#fab8d9;
+border-style:dotted;
+border-width:5px;
+border-color:#5c0b33;
+height:50px;
+width:50px;
+}
+
+.gobutton{
+background-color:#ffffff;
+border-width:5px;
+border-radius:40px;
+border-color:#0c6b58;
+height:70px;
+width:70px;
+}
+
+
+Bootstrap Backgrounds and Buttons
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <h1>Bootsrap backgrounds and buttons</h1>
+      <div>
+          <p class="bg-info">info paragraph</p>
+          </div>
+          <p class="bg-warning"> warning paragraph</p>
+          <div>
+              <button class= " btn btn-primary">Get started</button>
+          </div>
+          <div>
+              <button class=" btn btn-secondary">Get started</button>
+          </div>
+          <div>
+              <button class=" btn btn-outline-success">Get started</button>
+          </div>
+          <div>
+              <button class=" btn btn-outline-danger">Get started</button>
+          </div>
+  </body>
+</html>
+
+.bg-info{
+    background-color:blue ;
+    color:white;
+}
+
+.bg-warning{
+    background-color: orange ;
+    color:black;
+}
+
+
+
+
+

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg-container {
+    background-color: #1b1b1b;
+    height: 100vh;
+    background-size: cover;
+}
+
+.main-heading {
+
+    font-family: "Bree Serif";
+    font-size: 30px;
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+
+}
+
+.books-card {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0px;
+    background-color: #e6f6ff;
+    margin: 10px;
+
+}
+
+.main-image {
+    width: 500px;
+    height: 250px;
+    padding: 0px;
+
+}
+
+.books-name {
+    font-family: "Bree Serif";
+    color: #183b56;
+    font-size: 25px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.books-info {
+    font-family: "Bree Serif";
+    color: #06070d;
+    font-size: 15px;
+    padding: 10px;
+
+}
+
+.author-name {
+    font-family: "Berif Serif";
+    font-size: 10px;
+    color: #9aa5b1;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.book2-image {
+    width: 350px;
+    height: 200px;
+    padding: 10px;
+}
+
+.recom-books-name {
+    font-family: "berif Serif";
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.recom-books-info {
+    font-family: "Berif Serif";
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+}
+
+.button {
+    font-family: "roboto";
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.books-card2 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}

@@ -1,37 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+.details-container {
 
-.product-section-heading {
-    color: black;
-    font-size: 25px;
-    font-family: "Roboto";
-    font-weight: 600;
+    border-style: solid;
+
+    border-width: 2px;
+
+    width: 350px;
 }
 
-.image-card {
-    height: 50px;
-    width: 30px;
+
+
+.image {
+
+    height: 300px;
+
+    width: 350px;
+
 }
 
-.vr-container {
-    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-products-headset-img.png");
-    background-size: cover;
-    height: 100vh;
+
+
+.card-container {
+
+    padding: 10px;
+
 }
 
-.vr-container2 {
-    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-products-headset-with-controllers-img.png");
-    background-size: cover;
-    height: 100vh;
+
+
+.mobile-spec-heading {
+
+    font-family: roboto;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #0a1f44;
+
+
+
 }
 
-.heading {
-    color: white;
-    font-size: 25px;
-    font-family: "Roboto";
-    font-weight: 600;
+
+
+.mobile-unordered-list {
+
+    font-family: roboto;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    color: #707070;
+
 }
 
-.price-card {
-    color: white;
-    font-size: 18px;
+
+
+
+
+.button-container {
+
+    text-align: center;
+
+    margin: 10px;
+
 }

@@ -1,18 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
 
-.vr-features-card-description {
-    color: #1f2933;
-    font-style: italic;
-    font-weight: bold;
-
+.bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/hotelbg.png");
+    height: 100vh;
+    background-size: cover;
+    padding: 20px;
+    color: white;
 }
 
-.card-container {
+.button-container {
     text-align: center;
+    margin: 20px;
 }
 
-.interaction {
-    color: #1f2933;
-    font-style: italic;
-    font-weight: bold;
+.button {
+    background-color: #ffffff;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 500;
+    width: 119px;
+    height: 38px;
+    border-width: 0;
+    border-radius: 8px;
 }
