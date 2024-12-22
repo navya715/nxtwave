@@ -1,0 +1,3 @@
+https://cloudinary.com/
+
+You can get the URLs to your images using Cloudinary. Cloudinary lets you easily upload the images and provide the image URLs.

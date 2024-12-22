@@ -1,0 +1,17 @@
+.card {
+    background-color: lightblue;
+    text-align: center;
+}
+
+.main-heading {
+    color: blue;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.paragraph {
+    color: grey;
+}

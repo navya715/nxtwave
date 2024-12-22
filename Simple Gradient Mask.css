@@ -1,0 +1,40 @@
+/* scenes (the good stuff) */
+
+.scenes {
+  position: relative;
+  aspect-ratio: 2.4 / 1;
+}
+
+.scene-1,.scene-2 {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+}
+
+.scene-1 {
+  background-image: url(https://assets.codepen.io/77020/sw-simple-scene-1.jpg);
+}
+
+.scene-2 {
+  background-image: url(https://assets.codepen.io/77020/sw-simple-scene-2.jpg);
+  -webkit-mask-image: linear-gradient(to right, transparent 33%, #fff 67%);
+}
+
+/* everything else */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  background-color: #111;
+}
+
+.wrapper {
+  width: min(1000px, 100%);
+}
