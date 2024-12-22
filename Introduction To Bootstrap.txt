@@ -1,0 +1,118 @@
+1. Explain what is Bootstrap and its importance?
+Bootstrap is a large collection of predefined reusable Code Snippets written in HTML, CSS, and Javascript. The Code Snippets include Buttons, Cards, Carousels, etc.
+
+It is created by Twitter
+It is currently used by companies like Twitter, LinkedIn, Spotify, Udemy, etc.
+More than 20 million websites are built using Bootstrap till now.
+
+Importance of Bootstrap:
+
+Bootstrap can be used to develop desktop and mobile applications. There is a built-in capability to resize the app automatically, making it smooth to move from a website to a mobile app.
+Bootstrap includes HTML and CSS-based design templates for typography, forms, buttons, tables, navigation, modals, image carousels, etc.
+The user interface is easy to use and built using Bootstrap.
+
+2. What are the advantages of Bootstrap?
+Some of the advantages of Bootstrap are:
+
+Time Saving: Bootstrap provides predefined reusable code snippets which makes us not build everything from scratch.
+Consistency: Bootstrap provides consistent output across all the browsers. It also solves inconsistencies between designers and developers.
+Customizable: Bootstrap themes and templates can be customized as per our project requirement.
+Cross-browser Compatible: Bootstrap is compatible with all the latest versions of browsers.
+Easy to Use: Bootstrap is very simple to use. The setup process doesn't take too long and is relatively easy, even for beginners.
+
+3. How to use Bootstrap code snippets?
+To use the Code Snippets provided by Bootstrap, we need to add a piece of code within the HTML head element. We call it Bootstrap CDN.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <button class="btn btn-primary">Get Started</button>
+    <button class="btn btn-secondary">Get Started</button>
+  </body>
+</html>
+
+
+4. Name some of the Bootstrap class names?
+Some of the Bootstrap class names are:
+
+btn
+btn-primary
+row
+container
+text-center
+text-danger..... many more
+
+5. Who Developed The Bootstrap?
+The Bootstrap is developed by Mark Otto and Jacob Thornton at Twitter.
+
+6. Why Bootstrap is preferred for website development?
+Bootstrap has better features as compared to other web development platforms.
+
+It provides predefined reusable code snippets that enable the web developer to create a new website quickly. No need to do code from scratch.
+
+It provides extensive browser support for almost every known browser such as Opera, Chrome, Firefox, Safari, etc.
+
+It supports mobile applications with the help of responsive design and can adjust CSS as per the device, screen size, etc.
+
+It has a Massive Support Community that helps web developers when an issue occurs.
+
+Bootstrap provides JavaScript plugins that add more interaction to the website.
+
+7. What does the Bootstrap package include?
+The Bootstrap package includes,
+
+Scaffolding: Bootstrap provides a basic structure with Grid System, link styles, and background.
+
+CSS: Bootstrap comes with the feature of global CSS settings, fundamental HTML elements style and an advanced grid system.
+
+Components: Bootstrap contains a lot of reusable components to provide iconography, dropdowns, navigation, alerts, pop-overs, and much more.
+
+JavaScript Plugins: Bootstrap also contains a lot of custom JavaScript plugins. We can easily include them all, or one by one.
+
+Customize: Bootstrap components are customizable and we can customize Bootstrap's components to get our own style.
+
+
+8. What are the differences between Bootstrap and Foundation?
+Some of the differences between Bootstrap and Foundation are:
+
+Bootstrap	Foundation
+Bootstrap offers an unlimited number of UI elements.	In Foundation UI element options are very limited.
+Bootstrap uses pixels.	Foundation uses REMs.
+Bootstrap is easy to use	Foundation is not great for beginners compared to Bootstrap
+
+9. What are the differences between different bootstrap versions?
+Some of the differences between Bootstrap 5, Bootstrap 4, and Bootstrap 3 are:
+
+Bootstrap 5	Bootstrap 4	Bootstrap 3
+Has separate Portrait and Landscape mode on Smartphones.	Has separate Portrait and Landscape mode on Smartphones.	Both Portrait and Landscape mode looks identical.
+Container size is 1320px	Container Size is 1140px	Container Size is 1170px
+Has six class names prefixes (col-xxl, col-xl, col-lg-, col-md- , col-sm-, col-)	Has five class names prefixes (col-xl, col-lg-, col-md-, col-sm-, col-)	Has four class names prefixes (col-lg-, col-md-, col-sm-, col-xs-)
+Uses CSS Flexbox, CSS functions and variables	Uses CSS Flexbox	Uses CSS Float and Clear
+Has only responsive layout	Has only responsive layout	Has non responsive layout option
+Uses better Cards	Uses Cards instead of wells and panels	Uses No Cards
+
+
+

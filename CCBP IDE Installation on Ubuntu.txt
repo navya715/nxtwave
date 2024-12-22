@@ -1,0 +1,96 @@
+1.Enable WSL Feature
+
+Open PowerShell as Administrator and run:
+
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+
+2.Enable Virtual Machine Feature
+
+Enable the Virtual Machine Platform feature. Your system will require BIOS-level hardware virtualization support which must be enabled in the BIOS settings.
+
+You can check whether virtualization support is enabled by checking your Task Manager.
+  
+Open PowerShell as Administrator and run:
+
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+Restart your PC.
+
+3.Download Kernel Package
+
+Download the latest WSL2 Linux kernel update package for x64 PCs
+Run the update package downloaded in the previous step. (Double-click to run - you will be prompted for elevated permissions, select "yes" to approve this installation.)
+
+4.Set WSL 2 as your default version
+
+Open PowerShell and run this command to set WSL 2 as the default version.
+
+wsl --set-default-version 2
+
+5.Install Linux Distribution
+
+Install Ubuntu from Microsoft Store.
+Once the installation is complete, open "Ubuntu" from start-menu.
+Enter a new username and password for the WSL environment when prompted.
+
+Note
+Password will not be visible when you're typing.
+
+6.Setup Docker
+
+Download Docker Installer and double-click Docker Desktop Installer.exe from your admin account to run the installer.
+When prompted, ensure the Enable WSL 2 Features option is selected on the Configuration page.
+Follow the instructions on the installation wizard authorize the installer and proceed with the install.
+When the installation is successful, click Close to complete the installation process.
+
+To start Docker Desktop, search for Docker, and select Docker Desktop in the search results.
+
+When the whale icon in the status bar stays steady, Docker Desktop is up-and-running, and is accessible from any terminal window.
+
+Enable Docker Integration with the WSL
+
+7.Using docker from WSL
+
+Now search for Ubuntu in your installed applications and start the application. A terminal will be opened.
+
+Run the below command to see the docker version
+
+docker -v
+
+Run the below command to install the prerequisites for the IDE
+
+curl -s https://assets.ccbp.in/ide/windows-post-docker-installation.sh | bash
+
+Restart your PC
+
+Starting the IDE:
+
+Open the Ubuntu application and run the below step to start the IDE
+
+cd ~/ccbp-ide && docker-compose up -d
+
+Access the IDE from http://localhost
+
+8.Setting up a sample workspace
+
+Now your IDE is ready, let’s create a sample workspace by running the following commands
+
+Step - 1 : Authentication
+
+Authenticate to Advance Learning Portal
+
+ccbp authenticate 9HEX6MG8NL
+
+Step - 2 : Start a sample project
+
+Create a sample workspace and get the project’s files
+
+ccbp start FNLL8QE5WE
+
+Right click on the index.html, select Open With -> Preview to view the output
+
+And you are all set for working on your further projects! 
+
+
+
+

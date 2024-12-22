@@ -1,0 +1,236 @@
+1. What are the differences between general functions and arrow functions?
+
+https://betterprogramming.pub/difference-between-regular-functions-and-arrow-functions-f65639aba256
+
+2. Explain JavaScript Functions?
+A JavaScript Function is a block of code designed to perform a particular task. A JavaScript function is executed when something invokes it (calls it).
+
+We can define the code once, and use it many times. We can use the same code many times with different arguments, to produce different results (We can reuse code ).
+
+Example:
+
+function myFunction(p1, p2) {
+  return p1 * p2; // The function returns the product of p1 and p2
+}
+
+console.log(myFunction(2, 3)) // Output: 6
+console.log(myFunction(5, 8)) // Output: 40
+
+3. What are the different types of JavaScript Functions?
+
+Function declaration (regular function)
+Function expression
+Shorthand method definition
+Arrow function
+Generator function
+
+4. What is a Factory Function?
+A Factory function is any function that returns a new object for every function call. The Function name should follow the camelCase naming convention.
+
+Syntax:
+
+function functionName(parameter1, parameter2) {
+  return {
+    property1: parameter1,
+    property2: parameter2,
+  }
+}
+let myObject = functionName(arg1, arg2);
+
+function createCar(color, brand) {
+  return {
+    color: color,
+    brand: brand,
+    start: function() {
+      console.log("started");
+    }
+  };
+}
+
+let car1 = createCar("blue", "Audi");
+let car2 = createCar("red", "Tata");
+let car3 = createCar("green", "BMW");
+
+console.log(car1);  // Output: Object { color: "blue", brand: "Audi", start: ƒ() }
+console.log(car2);  // Output: Object { color: "red", brand: "Tata", start: ƒ() }
+console.log(car3);  // Output: Object { color: "green", brand: "BMW", start: ƒ() }
+
+5. What is a Constructor Function?
+The Constructor Function is used to create Objects.
+
+It is a regular function that returns a new object on calling with the new operator. The created new object is called an Instance.
+
+Syntax:
+
+function FunctionName(parameter1, parameter2, ...) {
+  this.property1 = parameter1;
+  this.property2 = parameter2;
+  ...
+  ...
+}
+let myObject = new FunctionName(arg1, arg2, ...)
+
+When a function is called with the new operator, it does the following steps:
+
+Creates an empty object and assigns it to this
+Return this
+
+Example:
+
+function Car(color, brand) {
+  this.color = color;
+  this.brand = brand;
+  this.start = function () {
+    console.log("started");
+  };
+}
+
+let car1 = new Car("blue", "Audi");
+console.log(car1); // Car { }
+
+Note
+The Function name should follow the PascalCase naming convention.
+
+6. What function is called when two functions have the same name?
+The last function is called.
+
+When we define the multiple functions with the same name, then the last defined one will be called. It is called Function Overriding.
+
+JavaScript supports Function Overriding.
+
+7. What is a regular function?
+A Regular function is nothing but the Function Declaration.
+
+It is defined by a function keyword, followed by a function name, a list of parameters in a pair of parenthesis (param1, ..., paramN) and a pair of curly braces {...} that contains the function body.
+
+Example:
+
+function getArrayLength(array) {
+  return array.length;
+}
+
+8. Name any four client-side storages?
+Client-Side Data Storage is storing the data on the client (user's machine).
+
+Local Storage
+Session Storage
+Cookies
+IndexedDB and many more.
+
+9. What is the size of localStorage?
+LocalStorage is limited to about 5MB and can contain only strings.
+
+10. What is local storage and its methods?
+The Local Storage allows web applications to store data locally within the user's browser. It is a Storage Object. Data can be stored in the form of key-value pairs.
+
+Methods:
+
+setItem(): The setItem method can be used for storing data in the Local Storage.
+
+Syntax:
+
+localStorage.setItem("Key", "Value");
+
+getItem(): The getItem method can be used for getting data from the Local Storage.
+
+Syntax:
+
+localStorage.getItem("Key");
+
+removeItem(): The removeItem method can be used for removing the specified Storage Object item from the Local Storage.
+
+Syntax:
+
+localStorage.removeItem("Key");
+
+11. Whether the Local Storage values will be deleted if we clear the cache in Browser?
+No, the Local Storage values won't be deleted if we clear the cache.
+
+Local Storage values will be deleted,
+
+When removed the particular key value using the localStorage.removeItem method
+When removed the whole Local Storage values using the localStorage.clear method
+When cleared the recent history with the cookies from start time in Browser.
+
+
+12. How do you know the Cookie has expired?
+While using the js-cookie third-party package, we use Cookies.get method to access the cookie.
+
+We can know the Cookie has expired, if the Cookies.get methods returns undefined.
+
+Example:
+
+const token = Cookies.get("jwt_token"); // Assume that there is was a Cookie set with the key "jwt_token" with value the 1234
+ 
+if (token === undefined) {
+ console.log("Cookie is expired");
+}
+
+13. How do you find the present date and time?
+We can find the present date and time by using new Date() method.
+
+We can create a date object without passing any arguments to the new Date() method.
+
+Example:
+
+let now = new Date();
+
+console.log(now); // Output: Tue Feb 24 2021 19:10:29 GMT+0530 (India Standard Time) { }
+
+Here, the new Date() method creates a new date object with the present date and local time.
+
+14. Name some of the built-in methods in JavaScript?
+some of the built-in methods in JavaScript:
+
+Name	Description
+ceil()	Returns the smallest integer that is greater than or equal to the given number
+concat()	Combines two strings and returns the newer string
+constructor()	Returns the function that created the corresponding instance of the object
+Date()	Returns the present date and time
+pop()	Removes and returns the last element from an array
+slice()	Returns the selected elements in an array, as a new array.
+
+15. What is an arrow function?
+An Arrow function is a simple and concise syntax for defining functions.
+
+It is an alternative to a function expression.
+
+Syntax:
+
+let sum = (param1, param2, …) => {
+  // statement(s)
+};
+sum()
+
+Example:
+
+let sum = (a, b) => {
+    let result = a + b;
+    return result;
+};
+console.log(sum(4, 3)); // Output: 7
+
+16. What are the uses of Arrow Functions?
+An Arrow function is a simple and concise syntax for defining functions.
+
+It is an alternative to a function expression.
+It inherits this from the context in which the code is defined.
+The return statement and curly braces are not required for simple expressions.
+If there is only one parameter, then parentheses are not required.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

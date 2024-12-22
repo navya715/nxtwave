@@ -1,0 +1,17 @@
+1. What is Flexbox Utility in Bootstrap?
+The Flexbox utilities in Bootstrap makes us quickly manage the layout, alignment, and sizing of grid columns, components, etc.
+
+Some of the Flexbox utility class names in Bootstrap are:
+
+The .d-flex class name enables the flex behaviours.
+Flexbox property	Class Names
+flex-direction	flex-row, flex-column, etc.
+justify-content	justify-content-start, justify-content-end, justify-content-center, justify-content-between, justify-content-around, etc.
+align-items	align-items-start, align-items-end, align-items-center, align-items-baseline, align-items-stretch, etc.
+align-self	align-self-start, align-self-end, align-self-center, align-self-baseline, align-self-stretch, etc.
+
+
+2. Explain the Bootstrap class names d-none and d-block ?
+Class Name	Description
+d-none	Doesn't display an HTML element and doesn't take any space in the HTML document.
+d-block	Displays an HTML element

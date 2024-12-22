@@ -1,0 +1,216 @@
+1. What is meant by an HTML body element?
+The HTML body element defines the main content of an HTML document that displays on the web page.
+
+It can contain text content, paragraphs, headings, images, tables, links, videos, etc.
+
+2. What are the HTML elements that are commonly used?
+Some of the commonly used HTML elements are:
+
+h1
+p
+br
+hr
+a
+img
+div
+span
+
+
+3. What is the use of an HTML anchor element?
+We use the HTML anchor elements to navigate to other web resources or a specific HTML element within the HTML document. They are also called as Hyperlinks/ Links.
+
+Syntax:<a href="URL">Content</a>
+
+4. What is an HTML heading element and an HTML paragraph element?
+Heading Element
+
+HTML defines six levels of headings.
+
+The HTML h1 element defines the most important heading of an HTML document.
+The HTML h6 element defines the least important heading of an HTML document.
+
+Example:<h1>Tourism</h1>
+
+Paragraph Element
+
+The HTML p element defines the paragraph of an HTML document.
+
+Example:<p>Plan your trip wherever you want to go</p>
+
+5. What are the differences between HTML div and span elements?
+
+div
+
+The HTML div element is a block-level element	
+It can be used to wrap around other HTML elements and apply CSS styles to many elements at once
+
+span
+
+The HTML span element is an inline element
+It can be used to wrap a small portion of text, etc and add CSS styles to it
+
+6. What is an HTML container element?
+The HTML container element (div) defines a container. 
+
+It can be used to wrap a group of elements and apply CSS styles to many elements at once.
+
+7. What are HTML tags?
+HTML Tags are like keywords that define how a web browser will format and display the content.
+
+With the help of tags, a web browser can distinguish between HTML elements and text.
+Examples : p, h1, br, hr, a, img, ul, ol, li, form, input, textarea, select, option
+
+8. How many types of HTML heading elements are there?
+HTML defines six levels of headings.
+
+HTML headings are defined with the h1 to h6 elements.
+
+h1 element is the most important heading element.
+h6 element is the least important heading element.
+
+
+9. What is an HTML script element?
+The HTML script element can be used to embed the JavaScript code.
+
+It can contain scripting statements, or it points to an external script file through the src attribute.
+
+Example: <script src="counter.js"></script>
+
+10. How many HTML h1 elements can be used on a web page?
+Using more than one HTML h1 element is allowed by the HTML specification, but it is not considered a best practice.
+
+
+11. What is the HTML head element and why we use it?
+The HTML head element is the container for the elements which provide extra information about the document (metadata).
+It describes the properties of the document such as title, character set, style sheets, scripts, etc.
+
+
+12. How to add line breaks to an HTML paragraph element?
+The HTML br element is used to add a line break to an HTML paragraph element. It breaks the text and continue it in the next line.
+
+It is useful in writing poems, addresses, etc.
+
+Example:
+
+<h1 class="heading">
+  Twinkle Twinkle Little Star
+</h1>
+<p>
+  Twinkle, twinkle, little star, <br />
+  How I wonder what you are! <br />
+  Up above the world so high, <br />
+  Like a diamond in the sky.
+</p>
+
+
+
+13. How to display images on the web page?
+We can display images on the web page using the HTML img element.
+
+Generally, the HTML img element requires two main HTML attributes.
+
+src specifies the path to the image.
+
+alt specifies an alternate text for the image.
+
+Syntax: <img src="IMAGE_URL" alt="image" />
+
+
+14. What are the attributes we can give to an HTML image element?
+The attributes we can give to an HTML image element:
+
+src
+alt
+height
+width
+class, etc.
+
+
+15. What is an HTML image element?
+Image Element
+
+The HTML img element defines an Image.
+
+Syntax:<img src="IMAGE_URL" alt="image" />
+
+16. Does a hyperlink only apply to text?
+No. We can use hyperlinks to text as well as images, buttons, etc.
+
+Example:<a href="link"> Link Text </a>
+<a href="link"> <button>Click Here</button> </a>
+<a href="link"> <img src="image.png" /> </a>
+
+17. How to create a link in HTML and what is the HTML target attribute?
+The HTML anchor element can be used to create the links on a web page.
+
+It requires the HTML href attribute to specify the URL/ path of the page where the link goes to.
+
+HTML target attribute:
+
+The HTML target Attribute specifies where to open the linked web resource.
+
+It can have the following values:
+
+Value                  Description
+
+_self	(Default value) It opens the document in the same window or tab as it was clicked.
+_blank	It opens the document in a new window or tab.
+_parent	It opens the document in a parent frame.
+_top	It opens the document in a full-body window.
+
+
+18. What is the difference between HTML anchor element and HTML link element?
+HTML anchor element:
+
+We use the HTML anchor element to navigate to other web resources or a specific element within the HTML document.
+
+HTML link element:
+
+We use the HTML link element to link the HTML and CSS files.
+
+
+20. What are the differences between the HTML ordered List and the HTML unordered List?
+HTML ordered list
+
+HTML ordered list                                                                    HTML unordered list
+	                                        
+It is a collection of related items that follow some order or have a sequence	It is a collection of related items that have no special order or sequence
+It is created using the ol element	                                         It is created using the ul element
+By default, list items in the Ordered List are marked with numbers.	         By default, list items in the Unordered List are marked with bullets.
+
+
+21. Explain types of lists in HTML?
+There are three types of lists in HTML:
+
+Unordered list: It is used to group a set of related items in no particular order.
+
+Ordered list: It is used to group a set of related items in a specific order.
+
+Description list: It is used to display name/value pairs such as terms and definitions.
+
+
+22. Explain the HTML hr (horizontal line) element?
+HTML Horizontal Rule Element: The HTML hr element inserts a horizontal line and helps to separate the content.
+
+
+23. Explain about the HTML block-level elements and inline elements?
+Block-level Elements:
+
+The HTML Block-level elements always start in a new line and take up the full width available. 
+
+So, an HTML Block-level element occupies the entire horizontal space of its parent element.
+
+Examples: HTML h1 element, HTML p element, HTML div element, etc.
+
+Inline Elements:
+
+The HTML Inline elements do not start in a new line and take up the content width.
+
+Examples: HTML button element, HTML img element, HTML a element, etc.
+
+
+24. Why Meta elements are used in HTML?
+Meta elements can contain information about character encoding, description, title of the document etc.
+Meta elements are used to tell the browser about the page description, author of the template, character set, keywords, etc.
+Meta elements are used for search engine optimization to tell the search engine about the page contents.
+

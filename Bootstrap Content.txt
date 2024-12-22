@@ -1,0 +1,9 @@
+1. What are Contextual classes of table in Bootstrap?
+.active: Applies the hover color to a particular row or cell.
+
+.success: Indicates a successful or positive action.
+
+.warning: Identifies a warning that might need attention.
+
+.danger: Indicates a dangerous or potentially negative action.
+

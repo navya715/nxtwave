@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.vr-image-logo {
+    height: 40px;
+    width: 50px;
+}
+
+#menu-options-style1 {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+#menu-options-style2 {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+#menu-options-style3 {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+#menu-options-style4 {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+.virtual-reality-background-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-banner-bg.png");
+    height: 100vh;
+    background-size: cover;
+}
+
+.virtual-reality-main-heading {
+    font-family: "Roboto";
+    font-size: 38px;
+    color: white;
+    font-weight: bold;
+}
+
+.custom-button {
+    height: 36px;
+    width: 120px;
+    font-family: "Roboto";
+    font-size: 15px;
+    color: white;
+    background-color: #1a2137;
+    border-radius: 5px;
+}

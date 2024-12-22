@@ -1,0 +1,211 @@
+1. Write examples for addition and subtraction operators in JavaScript?
+The addition operator (+) adds numbers:
+
+Example:
+
+const x = 5;
+const y = 2;
+const z = x + y; // z = 7
+
+The subtraction operator (-) subtracts numbers:
+
+Example:
+
+const x = 5;
+const y = 2;
+const z = x - y; // z = 3
+
+2. What are the different Operators in JavaScript?
+
+Assignment Operators
+
+Name	Shorthand operator	Meaning
+Assignment	x = f()	x = f()
+Addition assignment	x += f()	x = x + f()
+Subtraction assignment	x -= f()	x = x - f()
+Multiplication assignment	x *= f()	x = x * f()
+Division assignment	x /= f()	x = x / f()
+Remainder assignment	x %= f()	x = x % f()
+
+Comparison operators
+
+Operator	Description
+Equal (==)	Returns true if the operands are equal.
+Not equal (!=)	Returns true if the operands are not equal.
+Strict equal (===)	Returns true if the operands are equal and of the same type.
+Strict not equal (!==)	Returns true if the operands are of the same type but not equal, or are of a different type.
+Greater than (>)	Returns true if the left operand is greater than the right operand.
+Greater than or equal (>=)	Returns true if the left operand is greater than or equal to the right operand.
+Less than (<)	Returns true if the left operand is less than the right operand.
+Less than or equal (<=)	Returns true if the left operand is less than or equal to the right operand.
+
+Arithmetic operators
+
+Operator	Description
++	Adds the operands
+-	Subtracts the operands
+*	Multiplies the operands
+/	Divides the operands
+
+Logical Operators
+
+Operator	Usage	Description
+Logical AND (&&)	expr1 && expr2	Returns expr1 if it can be converted to false else returns expr2. Thus, when used with Boolean values, && returns true if both operands are true else returns false.
+Logical OR (||)	expr1 || expr2	Returns expr1 if it can be converted to true else returns expr2. Thus, when used with Boolean values, || returns true if either operand is true; if both are false, returns false.
+Logical NOT (!)	!expr	Returns false if its single operand that can be converted to true else returns true.
+
+Conditional (ternary) operator
+
+It takes three operands.
+
+Syntax:
+
+condition ? val1 : val2;
+
+3. Why does comparing two similar objects return false in JavaScript?
+JavaScript compares objects and primitives differently.
+In primitives, it compares them by value while in objects it compares them by reference or the address in memory where the variable is stored.
+
+Example:
+
+let a = { a: 1 };
+let b = { a: 1 };
+let c = a;
+
+console.log(a === b); // Output: false (even though they have the same property)
+console.log(a === c); // Output: true
+
+That's why the first console.log statement returns false and the second console.log statement returns true. a and c have the same reference while a and b are not.
+
+4. What is the difference between loose equal to (==) and strict equal to (===)?
+Loose equal to (==)
+
+Loose equality compares two values for equality but doesn't compare type of values.
+
+Strict equal to (===)
+
+Strict equality compares two values for equality including type of values.
+
+Example:
+
+console.log(2 == "2"); // Output: true
+console.log(2 === "2"); // Output: false
+
+5. What does JavaScript use instead of == and !=?
+JavaScript uses === and !== instead of == and !=.
+
+=== and !== compares also the types of values whereas == and != doesn't.
+
+6. What is a Switch case?
+A Switch statement is a conditional statement like if...else statement used in decision making. The switch statement executes a block of code depending on different cases.
+
+It evaluates an expression. The value of the expression is then compared with the values of each case in the structure. If there is a match, the associated block of code is executed.
+
+Syntax:
+
+switch(expression) {
+ case n:
+  code block
+  break;
+ case n:
+  code block
+  break;
+ default:
+  default code block
+}
+
+The break keyword stops the execution.
+
+The default keyword specifies some code to run if there is no case match. There can only be one default keyword in a switch
+
+7. What are the differences between if...else and switch statements?
+
+basis for comparison	if...else	switch
+Basic	Which statement will be executed depend upon the output of the expression inside if statement	Which statement will be executed is decided by user
+Expression	if...else statement uses multiple statement for multiple choices	switch statement uses single expression for multiple choices
+Testing	if...else statement test for equality as well as for logical expression	switch statement test only for equality
+Evaluation	if statement evaluates integer, character, pointer or floating-point type or boolean type	switch statement evaluates only character or integer value
+Sequence of Execution	Either if statement will be executed or else statement is executed	switch statement execute one case after another till a break statement is appeared or the end of switch statement is reached
+Default Execution	If the condition inside if statements is false, then by default the else statement is executed if created	If the condition inside switch statements does not match with any of cases, for that instance the default statements is executed if created
+
+8. What are the Conditional Statements in JavaScript?
+The Conditional Statements allow you to execute a block of code only when a specific condition is true.
+
+If...Else Statement
+
+if (conditionA) {
+  code to run if condition is true;
+}
+else if (conditionB) {
+  code to run if condition is false and else if condition is true;
+}
+else {
+  code to run if condition is false and else if condition is false;
+}
+
+Switch Statement
+
+switch (expression) {
+  case value1:
+    /*Statements executed when the
+    result of expression matches value1*/
+    break;
+  case value2:
+    /*Statements executed when the
+    result of expression matches value2*/
+    break;
+  ...
+  case valueN:
+    /*Statements executed when the
+    result of expression matches valueN*/
+    break;
+  default:
+    /*Statements executed when none of
+    the values match the value of the expression*/
+    break;
+}
+
+9. What does the || operator do?
+The || or Logical OR operator finds the first truthy expression in its operands and returns it. If all values are falsy, the last operand gets returned.
+
+Example:
+
+console.log(null || 1 || undefined); // Output: 1
+console.log('' || false) // Output: false
+
+10. What is the output of 10+"10" in JS?
+
+const result = 10 + "10";
+console.log(result); //  Output: 1010
+console.log(typeof result); // Output: string
+
+11. What is the output of 10+10 in JS?
+
+const result = 10 + 10;
+console.log(result); //  Output: 20
+console.log(typeof result); // Output: number
+
+12. Explain break and continue statements?
+Break statement	Continue statement
+The break statement is used to jump out of a loop. It can be used to jump out of a switch() statement. It breaks the loop and continues executing the code after the loop.	The continue statement jumps over one iteration in the loop. It breaks iteration in the loop and continues executing the next iteration in the loop.
+
+13. What is the difference between the Spread Operator and Rest Parameter?
+Spread Operator: The Spread Operator is used to unpack an iterable (e.g. an array, object, etc.) into individual elements.
+
+Example:
+
+let arr1 = [2, 3];
+let arr2 = [1, ...arr1, 4];
+
+console.log(arr2);  // Output: [1, 2, 3, 4]
+
+Rest Parameter: With Rest Parameter, we can pack multiple values into an array.
+
+Example:
+
+function numbers(...args) {
+console.log(args);  // Output: [1, 2, 3]
+}
+
+numbers(1, 2, 3);
+

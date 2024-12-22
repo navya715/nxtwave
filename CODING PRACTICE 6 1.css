@@ -1,0 +1,24 @@
+.vr-kit-card-image {
+    width: 200px;
+    height: 250px;
+}
+
+.home-page {
+    background-color: #f9fbfe;
+    border-width: 1px;
+}
+
+.head {
+    font-family: "Roboto";
+    font-size: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #1f2933;
+}
+
+.names {
+    color: #323f4b;
+    font-size: 25px;
+    font-family: "Roboto";
+    font-weight: 500;
+}

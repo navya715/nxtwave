@@ -1,0 +1,26 @@
+create a new repo in github
+
+create an empty repo in ccbp ide terminal
+> git init
+
+create connection b/w local and remote repo
+
+> git remote add origin<repository-url>
+
+> git remote add origin<https://github.com/navya715/Js-and-React-nxtwave.git>
+
+adding the code changes
+
+> git add -A
+
+save changes
+
+> git commit -m "commit message"
+
+adding the code changes 
+
+> git branch -M main
+
+pushing code to remote repo
+
+> git push -u origin main

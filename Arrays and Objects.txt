@@ -1,0 +1,450 @@
+1. Explain about Arrays in JavaScript?
+An Array holds an ordered sequence of items. 
+
+They are used to store multiple values in a single variable.
+The typeof operator in JavaScript returns object for arrays.
+
+2. How to compare two arrays?
+In JavaScript, to compare two arrays, 
+
+The length of both the arrays should be the same. The type and value of each item in one array should be compared with the counterpart in another array.
+
+JavaScript provides a function JSON.stringify() in order to convert an object or array into JSON string. By converting into JSON string we can directly check if the strings are equal or not.
+
+3. How can you create an Array in JavaScript?
+
+Creating an Array using the Array Literal
+
+let x = [];
+let y = [1, 2, 3, 4, 5];
+
+Creating an Array using the JavaScript Keyword new
+
+const evenNumbers = new Array(2, 4, 6);
+
+4. Explain about reduce, map, filter methods?
+reduce():
+
+The reduce method executes a reducer function (that we provide) on each element of the array. It passes in the return value from the calculation on the preceding element.
+
+The result is a single value. It is the result of running the reducer across all elements of the array.
+
+Example:
+
+const numbers = [1, 2, 3, 4];
+const reducer = (previousValue, currentValue) => previousValue + currentValue;
+
+console.log(numbers.reduce(reducer)); // Output: 10
+
+In each step, the reducer function adds the current array element to the result from the previous step until there are no more elements to add.
+
+map():
+
+The map method creates a new array with the results of calling the provided function for each array element in order.
+
+Example:
+
+const numbers = [1, 2, 3, 4];
+const result = numbers.map((number) => number * number);
+
+console.log(result); // Output: [1, 4, 9, 16]
+
+filter():
+
+The filter method creates a new array filled with all elements that pass the test (provided as a function).
+A new array with the elements that pass the test will be returned. If no elements pass the test, an empty array will be returned.
+
+Example:
+
+const numbers = [1, -2, 3, -4];
+const positiveNumbers = numbers.filter((number) => number > 0);
+
+console.log(positiveNumbers); // Output: [1, 3]
+
+5. What is the use of the push method in JavaScript?
+The push method adds new items to the end of the array.
+
+6. Write a sample program for map and filter?
+Sample program for map:
+
+const numbers = [1, 2, 3, 4];
+const doubled = numbers.map((item) => item * 2);
+console.log(doubled); // Output: [2, 4, 6, 8]
+
+Sample program for filter:
+
+const numbers = [1, 2, 3, 4];
+const evenNumbers = numbers.filter((item) => item % 2 === 0);
+console.log(evenNumbers); // Output: [2, 4]
+
+7. What is the use of a map method?
+Instead of manually iterating over the array using a loop, we can simply use the built-in map method.
+The map method allows you to iterate over an array and modify its elements using a callback function. The callback function will then be executed on each of the array's elements.
+
+8. Explain about the array method slice?
+The slice method returns the selected elements in an array, as a new array.
+
+It returns a portion between the specified start index and end index(end index not included) of an array into a new array.
+
+Syntax: arr.slice(startIndex, endIndex)
+
+Example:
+
+let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+let citrus = fruits.slice(1, 3);
+
+console.log(citrus); // Output: ["Orange", "Lemon"]
+console.log(fruits); // Output: ["Banana", "Orange", "Lemon", "Apple", "Mango"]
+
+9. How do you empty an array??
+There are several ways to empty an array. The simplest one is to reassign the variable to an empty array.
+
+Examples:
+
+let array = [1, 2, 3];
+
+// Assigning to an empty array
+array = [];
+
+// Setting its length property to 0
+array.length = 0;
+
+// Using splice with the array's length
+array.splice(0, array.length);
+
+10. What are the most useful JavaScript array methods?
+Some of the most useful JavaScript array methods are:
+
+push() 
+The push method adds elements to an array at the last position.
+
+pop() 
+The pop method removes the last element of an array and returns it.
+
+forEach() 
+The forEach method executes a provided function once for each array element. It always returns undefined.
+
+map() 
+The map method creates a new array with the results of calling the provided function for every array element.
+
+filter() 
+The filter method creates a new array filled with all elements that pass the test (provided as a function).
+
+splice() 
+The splice method changes the contents of an array by removing or replacing existing elements and/or adding new elements.
+
+slice() 
+The slice method returns a portion between the specified start index and end index(end index not included) of an array into a new array.
+
+shift() 
+The shift method removes the first element of an array.
+
+unshift() 
+The unshift method adds one or more elements to the beginning of an array.
+
+sort() 
+The sort method sorts the items of an array and returns the sorted array. The default sort order is ascending.
+
+11. What are the differences between slice and splice?
+Slice	Splice
+Doesn't modify the original array(immutable)	Modifies the original array(mutable)
+Returns the subset of original array	Returns the deleted elements as array
+Used to pick the elements from array	Used to insert or delete elements to/from array
+
+12. Explain about pop and shift methods?
+pop():
+
+The pop method removes the last element from an array and returns it. The array on which pop method is called will be changed.
+
+Example:
+
+let fruits = ["Apple", "Orange", "Banana", "Strawberry"];
+
+console.log(fruits.pop()); // Output: Strawberry
+console.log(fruits); // Output: ["Apple", "Orange", "Banana"]
+
+shift():
+
+The shift method removes an item from the beginning of an array and returns the removed item. The array on which shift method is called will be changed.
+
+let fruits = ["Apple", "Orange", "Banana", "Strawberry"];
+
+console.log(fruits.shift()); // Output: Apple
+console.log(fruits); // Output: ["Orange", "Banana", "Strawberry"]
+
+13. What is the difference between map and forEach methods?
+Both of them iterate through the elements of an array. The difference is that the map creates a new array while forEach doesn’t.
+
+14. Which JavaScript methods are used to search for an element in an array?
+indexOf():
+
+The indexOf method returns the first index at which a given element can be found in an array. It returns -1 if the element does not exist in the array.
+
+const array = [100, 121, 35, 5];
+
+const indexOfThirtyFive = array.indexOf(35);
+
+console.log(indexOfThirtyFive); // Output: 2
+
+
+includes():
+
+The includes method determines whether an array includes a certain value and returns true or false as appropriate.
+
+const array = [10, 11, 3, 20, 5];
+
+const includesThirtyFive = array.includes(35);
+
+console.log(includesThirtyFive); // Output: false
+
+filter():
+
+We can use the filter method to find elements in an array that meet a certain condition.
+
+const array = [1, 12, 3, 24, 35];
+
+const equalToThirtyFive = array.filter((element) => element === 35);
+
+console.log(equalToThirtyFive); // Output: [35]
+
+find():
+
+We use the find method to find the first element that meets a certain condition. Just like the filter method, it takes a callback as an argument and returns the first element that meets the callback condition.
+
+const array = [110, 1, 35, 0, 25];
+
+const equalToThirtyFive = array.find((element) => element === 35);
+
+console.log(equalToThirtyFive); // Output: 35
+
+15. What is the purpose of the splice method?
+The splice method changes the contents of an array.
+
+Remove existing items
+
+Syntax: arr.splice(Start, Delete Count)
+
+Start: Starting Index
+Delete Count: Number of items to be removed, starting from the given index
+
+let myArray = [5, "six", 2, 8.2];
+myArray.splice(2, 2);
+
+console.log(myArray); // Output: [5, "six"]
+
+let deletedItems = myArray.splice(2, 2);
+
+console.log(deletedItems); // Output: [2, 8.2]
+
+The splice() method returns an array containing the deleted items.
+
+Add new items
+
+Syntax: arr.splice(Start, Delete Count, Item1, Item2 ... )
+
+Here the Item1, Item2 ... are the items to be added, starting from the given index.
+
+let myArray = [5, "six", 2, 8.2];
+myArray.splice(2, 0, "one", false);
+
+console.log(myArray); // Output: [5, "six", "one", false, 2, 8.2]
+
+Replace existing items
+
+Syntax: arr.splice(Start, Delete Count, Item1, Item2 ... )
+
+let myArray = [5, "six", 2, 8.2];
+myArray.splice(2, 1, true);
+
+console.log(myArray); // Output: [5, "six", true, 8.2]
+
+16. How to sort the numbers in an array?
+By default, the sort method sorts elements alphabetically. To sort numerically just add the Compare Function that handles numeric sorts:
+
+Compare Function:
+
+function(a, b){
+  return a - b
+}
+
+When the sort() function compares two values, it sends the values to the compare function and sorts the values according to the returned (negative, zero, positive) value.
+
+If the result is negative, a is sorted before b.
+
+If the result is positive, b is sorted before a.
+
+If the result is 0, no changes are done with the sort order of the two values.
+
+Example:
+
+The compare function compares all the values in the array, two values at a time (a, b).
+
+When comparing 40 and 100, the sort method calls the compare function(40, 100).
+
+The function calculates 40 - 100 (a - b), and since the result is negative (-60), the sort method will sort 40 as a value lower than 100.
+
+let numArray = [40, 100, 99];
+numArray.sort(function (a, b) {
+  return a - b;
+});
+
+console.log(numArray); // Output: [40, 99, 100]
+
+17. What is an object and explain object creation?
+An Object is a collection of properties, and a property is an association between a name (or key) and a value.
+
+In JavaScript, there are four ways to create an object:
+
+Object Literals:
+
+An object literal also called an object initializer, is a comma-separated set of paired names and values.
+
+const car = {
+  model: "BMW",
+  color: "red",
+  price: 2000,
+};
+
+New operator or constructor:
+
+If we call a function using a new operator, the function acts as a constructor and returns an object.
+
+function Car(model, color) {
+  this.model = model;
+  this.color = color;
+}
+
+let c1 = new Car("BMW", "red");
+
+Object.create method
+
+We can also create new objects using the Object.create method, which allows us to specify the prototype object and the properties.
+
+let Car = {
+  model: "BMW",
+  color: "red",
+};
+
+We can use the Car object as a prototype to create another object, as shown below:
+
+let ElectricCar = Object.create(Car);
+
+Class
+
+We can use the class keyword to create a class in JavaScript instead of a function constructor, and use the new operator to create an instance.
+
+class Car {
+  constructor(maker, price) {
+    this.maker = maker;
+    this.price = price;
+  }
+
+  getInfo() {
+    console.log(this.maker + " costs : " + this.price);
+  }
+}
+
+We can use the Car class to create objects as shown below:
+
+let car1 = new Car("BMW", 100);
+car1.getInfo();
+let car2 = new Car("Audi", 150);
+car2.getInfo();
+
+18. What are object prototypes?
+A prototype is a blueprint of an object. The prototype allows us to use properties and methods on an object even if the properties and methods do not exist on the current object.
+
+All JavaScript objects inherit properties from a prototype.
+
+Date objects inherit properties from the Date prototype.
+
+Math objects inherit properties from the Math prototype.
+
+Array objects inherit properties from the Array prototype.
+
+Example:
+
+let arr = [];
+arr.push(2);
+
+console.log(arr); // Output: [2]
+
+19. How to add key-value pair to an object in JavaScript?
+There are two possible solutions to add new properties to an object.
+
+Using dot notation: This solution is useful when you know the name of the property.
+
+Example:
+
+let object = {
+  key1: value1,
+  key2: value2,
+};
+object.key3 = "value3";
+
+Using square bracket notation: This solution is useful when the name of the property is dynamically determined.
+
+Example:
+
+let object = {
+  key1: value1,
+  key2: value2,
+};
+obj["key3"] = "value3";
+
+20. What is Object Destructuring?
+To unpack properties from Objects, we use Object Destructuring. The variable name should match with the key of an object.
+
+Example:
+
+let person = {
+  firstName: "Rahul",
+  lastName: "Attuluri",
+  age: 28,
+};
+
+let { age } = person;
+
+console.log(age); // Output: 28
+
+21. In the arrow functions, what is the significance of 'this' keyword?
+In Arrow functions, this depends on two aspects:
+
+When the code is defined
+Context
+Arrow function inherits this from the context in which the code is defined.
+
+22. What is the use of 'this' keyword in JavaScript?
+The this keyword allows us to reuse functions in different execution contexts. It means, a function once defined can be invoked for different objects using the this keyword.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

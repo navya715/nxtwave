@@ -1,0 +1,262 @@
+1. What is the full form of CSS?
+The full form of CSS is Cascading Style Sheets.
+
+
+2. Why do we use Style Sheets?
+Style sheets describe the presentation of HTML documents, including colors, layout, and fonts.
+
+They also make the HTML documents to adapt the presentation to different types of devices, such as large screens, small screens, or printers, etc.
+
+3. How to link the CSS file to the HTML file?
+The HTML link element is used to link the CSS file to the HTML file. It should be placed in the HTML head element.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="tourism.css" />
+  </head>
+  <body>
+    ...
+  </body>
+</html>
+
+The HTML rel attribute stands for a relationship of the linked document to the current document. In this case, it is a stylesheet.
+The HTML href attribute stands for the URL/path of the CSS file.
+
+4. What is CSS?
+CSS stands for Cascading Style Sheets.
+
+It is the stylesheet language that is used to define styles for the HTML documents, including the design, layout and variations in display for different devices and screen sizes.
+
+
+5. How to add CSS to the HTML document?
+CSS can be added to HTML documents in 3 ways.
+
+Inline: by using the HTML style attribute in the HTML elements.
+Internal: by using the HTML style element in the HTML head element.
+External: by using the HTML link element to link an external CSS file.
+
+6. What is the Internal Style Sheet and External Style Sheet in CSS?
+Internal Style Sheet:
+
+In Internal Style Sheet, CSS property-values are defined in the HTML style element inside the HTML head element.
+It is used to define the styles for a single HTML document.
+External Style Sheet:
+In External Style Sheet, CSS property-values are defined in a separate .css file.
+It can be used to define the styles for many HTML documents.
+
+7. What are the CSS Styles?
+Styles in CSS are rules that describe the presentation of an HTML document.
+
+Style information can be either attached as a separate document or embedded in the HTML document.
+
+
+8. Why do we need CSS?
+CSS is used to style an HTML document.
+
+It brings an HTML document to life, by choosing fonts, applying colors, defining margins, positioning elements, animating interactions, and much more.
+
+So, the HTML documents would look pretty boring without CSS.
+
+
+9. Explain Inline styles?
+The Inline styles are applied directly to an HTML element. They use the HTML style attribute, with CSS property values defined within it.
+
+Syntax:
+
+<tag style="property1: value1; property2: value2; ...">Content</tag>
+
+The HTML style attribute value can consist of one or more CSS property values.
+
+Note
+Generally using Inline Styles is not recommended because,
+
+Inline Styles are not reusable.
+Writing HTML and CSS separately increases code readability.
+
+
+10. What is a responsive web design?
+Responsive web design:
+
+Responsive web design is an approach to making web pages give the best user experience on all devices.
+
+A responsive website will automatically adjust for different screen sizes and viewports.
+
+
+11. Which of the following are CSS Units?
+A. px
+
+B. pt
+
+C. em
+
+D. all
+
+Answer: Option D (all)
+
+12. What are the advantages of using CSS?
+Some of the advantages of using CSS are:
+
+Saves Time
+
+CSS can save you time. Once a style sheet is created, we can use it multiple times. The best practice for CSS is to save it as a .css file, separate from your .html file. Whenever you find a style that you like, you can apply it to as many pages as we would like.
+
+Efficient
+
+CSS is efficient. It requires a few lines of code to style a webpage. So, it speeds up loading time and keeps files relatively lightweight.
+
+Easier to Learn
+
+CSS is very easy to learn and update, which makes global changes to style simple and quick.
+
+
+13. What are the advantages and disadvantages of CSS?
+Advantages of CSS
+
+CSS saves a lot of time.
+It helps to make consistent and spontaneous changes.
+It improves the loading speed of the page.
+It has better device compatibility.
+Disadvantages of CSS
+
+There could be cross-browser issues while using CSS.
+There are multiple levels of CSS such as CSS, CSS 2, CSS 3. This can create a confusion for non-developers and beginners.
+
+14. Can we add multiple class names to the HTML class attribute?
+We can provide multiple class names separated by space as a value to the HTML class attribute.
+
+Syntax:
+
+<tag class="name1 name2 name3 name4 ...">Content</tag>
+
+
+15. What is meant by the CSS Selector and what are the different types of it?
+The CSS Selectors are used to select the HTML elements that we want to style.
+
+The different types of CSS Selectors are:
+
+Simple Selectors
+
+Class Selector
+ID Selector
+Type (tag name) Selector
+Attribute Selector
+Universal Selector
+Pseudo-class
+Compound Selectors
+Complex Selectors and many more.
+
+
+16. Which has more specificity among Inline Styles and Class Selectors?
+Inline Styles have more specificity than Class Selectors.
+
+
+17. What is the need for CSS Selectors?
+The CSS Selectors are used to select the HTML elements that we want to style.
+
+There are a wide variety of CSS selectors like id, class, type, etc.
+
+
+18. Explain the HTML id attribute and the class attribute?
+
+HTML id Attribute:
+The HTML id attribute is used to specify the unique id to an HTML element.
+This attribute can be used by CSS and JavaScript to style or perform DOM manipulations to a particular element with the specified id.
+
+Syntax:
+
+<h1 id="heading">CSS Selectors</h1>
+
+HTML class Attribute:
+The HTML class attribute is used to specify one or more class names to an HTML element.
+This attribute can be used by CSS and JavaScript to style or perform DOM manipulations to the HTML elements with the specified class name.
+
+Syntax:
+
+<h1 class="heading main-heading">CSS Selectors</h1>
+
+
+19. What CSS property-values will be applied to an HTML element if it has both HTML id and class attributes?
+All the CSS properties in both the id and class selectors will be applied to the HTML element.
+
+If there are any CSS properties in common between the id and class selectors, then CSS property values in the id selector will be applied to the HTML element because of higher specificity.
+
+
+20. What is CSS Specificity?
+CSS Specificity is how browsers decide which CSS property values are the most relevant to an HTML element and apply those CSS property values to the HTML element.
+
+
+21. Explain Low to high specificity in CSS Selectors?
+The following list of CSS Selectors is in the lowest to highest order by specificity.
+
+Universal Selector
+type/ tag name Selector
+class Selector
+id Selector
+
+22. How do you change the style of an HTML element with and without a CSS Class Selector?
+Without CSS Class Selector
+
+Using inline styles and other CSS selectors like type/tag name, id selectors etc.
+
+Example: Using inline styles
+<h1 style="color:blue;"></h1>
+
+With CSS Class Selector
+
+ In HTML, specifying the HTML class attribute and its value as the class name to the HTML element.
+
+HTML
+In CSS, the . character, followed by the class name has to be specified as a class attribute value to the HTML element.
+
+With CSS Class Selector
+
+<h1 class="heading">CSS Selectors</h1>
+
+.heading {
+ color: blue;
+ }
+
+23. What is a Universal selector?
+The universal selector selects all the HTML elements in an HTML document.
+
+* {
+  color: green;
+  font-size: 20px;
+}
+
+24. How to style a particular HTML element?
+We can style a particular HTML element with CSS in many ways.
+
+Inline styles:
+An inline style can be used to apply the styles to a single HTML element.
+To use inline styles, add the style attribute to the relevant element and define the CSS property values within it.
+
+<p style="color:red;">Plan your trip</p>
+
+CSS Selectors:
+CSS Selectors let you apply CSS styles to a specific HTML element.
+It might be in either internal CSS or external CSS.
+Example: Using CSS class selectors
+
+<p class="paragraph">This is a paragraph.</p>
+
+.paragraph {
+ color: red;
+}
+
+25. How to override CSS style with the !important rule?
+Adding another CSS rule with !important, and using a selector with higher specificity (adding an additional tag, id, or classname to the selector).
+Adding another CSS rule with the same selector later in the stylesheet.
+
+Example: Using a selector with higher specificity
+
+p {
+  height: 50px !important;
+}
+.first-paragraph {
+  height: 60px !important;
+}
+#paragraph {
+  height: 70px !important;
+}

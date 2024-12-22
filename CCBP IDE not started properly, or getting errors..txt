@@ -1,0 +1,23 @@
+This issue can be resolved by following the below steps.
+
+
+
+Press the Windows logo key, and search for Turn Windows features on/off 
+
+
+Tick the Hyper-V or Windows Hypervisor platform checkboxes (check both if exist). If you find one only of Hyper-V or Windows Hypervisor platform then you need not worry, then check that only one.
+
+
+Click on Apply, and restart your PC.
+
+
+After restarting your PC, open Docker Desktop -> Click on the Trouble Shoot Icon (next to the settings icon) -> click on Restart and wait for it to start.
+
+
+Then in open settings -> General -> Check Start Docker Desktop when you log in option, refer to the image below (tick the first option), and click on Apply & Restart.
+
+
+Run the command in Ubuntu.
+
+
+cd ~/ccbp-ide && docker-compose up -d

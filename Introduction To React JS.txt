@@ -1,0 +1,484 @@
+1. What is React JS?
+React JS
+
+React JS is an open-source JavaScript library used to build user interfaces. It was developed by Facebook. It lets us compose complex UIs from small and isolated pieces of code called Components.
+
+2. What are the differences between React JS and JavaScript?
+Some of the differences between React JS and JavaScript are:
+
+React JS	JavaScript
+React JS is a library based on JavaScript	JavaScript is a scripting language
+Whenever state (data) is changed, it updates only what is necessary by making use of virtual DOM	Whenever data is changed, it updates the whole HTML DOM
+Whenever the state (data) is changed, the component re-renders and React efficiently updates the HTML DOM	If the data is changed, we need to update the HTML DOM by DOM methods/properties
+
+3. What is React JS used for?
+React is used for building user interfaces specifically for single-page applications.
+React allows us to create reusable components.
+React will efficiently update and render just the right components when the data changes.
+
+4. What are the advantages of React JS?
+The following are the major advantages of React JS:
+
+Easy to Learn
+Large Community
+Developer Toolset
+Open Source
+
+5. How to add a sample React component to an HTML page?
+Step 1: In the HTML file, add an HTML div element to which we want to add the React implementation.
+
+For instance, the index.html looks like this,
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>Steps To Add React to a Website</h1>
+    <div id="some_random_id"></div>
+  </body>
+</html>
+
+Step 2: Add the React Scripts to the same HTML page before the </body> tag as shown below:
+
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <h1>Steps To Add React to a Website</h1>
+    <div id="some_random_id"></div>
+
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+  </body>
+</html>
+
+Here, the scripts are added to load/import the React library.
+
+Step 3: Now add one more script, to load our component to the container having id some_random_id in the above code. Let’s name the JS file as myComponent.js. The src of the newly added script element should have the path to the myComponent.js file as the value.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>Steps To Add React to a Website</h1>
+    <div id="some_random_id"></div>
+
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="myComponent.js"></script>
+  </body>
+</html>
+
+Step 4: Now, Create and open the file named myComponent.js and paste the following code:
+
+class myButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { isLiked: false };
+  }
+
+  render() {
+    if (this.state.isLiked) {
+      return "Yes I Really Like This.";
+    }
+
+    return e(
+      "button",
+      { onClick: () => this.setState({ isLiked: true }) },
+      "Like Button"
+    );
+  }
+}
+const domContainer = document.querySelector("#some_random_id");
+ReactDOM.render(React.createElement(myButton), domContainer);
+
+Here we have created a React component named myButton.
+
+6. Why react is faster than JS?
+React is a JavaScript library, thus technically it isn't faster at the act of DOM manipulation than JavaScript itself. React isn't faster than JavaScript. It is approximately as fast as JavaScript.
+
+7. What are the advantages of React JS over JS?
+Compatibility with platforms
+React JS supports various libraries along with an excellent architecture for app development. The tools can be chosen for customization without any limitations to the platform.
+
+Reusability of components
+The non-complex logic in the components can be used and maintained easily. Just create a class and make use of as many instances as desired.
+
+Interactive UI
+To build a user-friendly application with a high success rate, there is a need to have a functional, interactive, and high-quality UI. ReactJS provides declarative components that enable you to develop UI functions and debug them.
+
+Virtual DOM
+One of ReactJS greatest assets is having a Virtual DOM. React compares new virtual DOM with current virtual DOM, and the difference will be efficiently updated to the Real DOM.
+
+Future-oriented
+Since ReactJS is compatible with most of the other tools and platforms out there, there is no need to work on the existing code while an update is happening.
+
+Wide Community
+One primary reason that makes ReactJS ideal for application development is an extensive community of developers always working to better the documentation.
+
+8. What are the advantages of using create-react-app CLI?
+Here are few advantages to using create-react-app:
+
+One line command to set up React web app.
+
+No need to mug up all the configuration, because it provides the way to set up and minifies the production-ready app.
+
+Application versioning can be well maintained.
+
+It comes with great package support like ESLint, Babel, Webpack, and so on.
+
+Upgrading the existing app to the latest version is less painful
+
+9. What is the difference between React Native and ReactJS?
+ReactJS is a JavaScript library, supporting both front-end web and being run on the server, for building user interfaces and web applications.
+
+React Native is a mobile framework that compiles native app components, allowing you to build native mobile applications (iOS, Android, and Windows) in JavaScript that allows you to use ReactJS to build your components, and implements ReactJS under the hood.
+
+10. What are the differences between React and ReactDom?
+React is a JavaScript library for building User Interfaces and ReactDOM is the JavaScript library that allows React to interact with the DOM.
+
+11. Why React instead of Angular?
+React uses virtual DOM whereas Angular uses HTML DOM.
+
+React beats Angular in terms of performance as React updates only what is necessary without rewriting the whole HTML DOM.
+
+React has larger community than Angular
+
+To know more, refer to this link
+
+12. What is the version of React JS you are learning?
+
+
+Concepts in Focus
+React JS
+Why React JS?
+Advantages of React JS
+
+Running JavaSript in HTML
+Creating Elements using React JS
+React CDN
+React.createElement()
+ReactDOM.render()
+
+JSX
+Babel
+Embedding Variables and Expressions in JSX
+Nesting JSX elements
+
+1. React JS
+React JS is an open-source JavaScript library used to build user interfaces. It was developed by Facebook.
+
+1.1 Why React JS?
+Performant websites
+Fewer lines of code
+Improves readability of code
+Less time consuming
+Open Source
+Reusable code
+1.2 Advantages of React JS
+Easy to Learn
+Large Community
+Developer Toolset
+2. Running JavaScript in HTML
+We can run JavaScript in HTML using the HTML script element. It is used to include JavaScript in HTML.
+
+<body>
+  <div id="root"></div>
+  <script type="text/javascript">
+    const rootElement = document.getElementById("root");
+    const element = document.createElement("h1");
+    element.textContent = "Hello World!";
+    element.classList.add("greeting");
+    rootElement.appendChild(element);
+  </script>
+</body>
+
+Here the type attribute specifies the type of the script.
+
+To include an external JavaScript file, we can use the HTML script element with the attribute src. The src attribute specifies the path of an external JS file.
+
+<script type="text/javascript" src="PATH_TO_JS_FILE.js"></script>
+
+3. Creating Elements using React JS
+3.1 React CDN
+<script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+
+3.2 React.createElement()
+The React.createElement() method is used to create an element using React JS. It is similar to the document.createElement() method in regular JavaScript.
+
+Syntax:
+
+React.createElement(type, props);
+
+type - Tag names like div, h1 and p, etc.
+props - Properties like className, onClick and id, etc.
+
+Props are shorthand for properties. It is an optional argument.
+
+<script type="module">
+  const elementProps = { className: "greeting", children: "Hello world!" };
+  const elementType = "h1";
+  const element = React.createElement(elementType, elementProps);
+</script>
+
+3.3 ReactDOM.render()
+The ReactDOM.render() method is used to display the React element.
+
+Syntax:
+
+ReactDOM.render(reactElement, container);
+
+reactElement - What to render
+container - Where to render
+
+<body>
+  <div id="root"></div>
+  <script type="module">
+    const elementProps = { className: "greeting", children: "Hello world!" };
+    const elementType = "h1";
+    const element = React.createElement(elementType, elementProps);
+    ReactDOM.render(element, document.getElementById("root"));
+  </script>
+</body>
+
+4. JSX
+React JS introduced a new HTML like syntax named JSX to create elements.
+
+const element = <h1 className="greeting">Hello World</h1>;
+
+The above JSX element compiles to,
+
+const elementProps = { className: "greeting", children: "Hello world!" };
+const element = React.createElement("h1", elementProps);
+
+4.1 Babel
+JSX is not JavaScript. We have to convert it to JavaScript using a code compiler. Babel is one such tool.
+
+It is a JavaScript compiler that translates JSX into regular JavaScript.
+
+<script type="text/babel">
+  const elementProps = { className: "greeting", children: "Hello world!" };
+  const element = React.createElement("h1", elementProps);
+  const element = <h1 className="greeting">Hello World</h1>;
+  ReactDOM.render(element, document.getElementById("root"));
+</script>
+
+Differences between HTML and JSX:
+
+HTML	JSX
+class	className
+for	htmlFor
+
+4.2 Embedding Variables and Expressions in JSX
+We can embed the variables and expressions using the flower brackets {}.
+
+Embedding variables in JSX:
+
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const name = "Rahul";
+    const className = "greeting";
+    const element = <h1 className="greeting">Hello World</h1>;
+    const element = <h1 className={className}>Hello {name}!</h1>;
+    ReactDOM.render(element, document.getElementById("root"));
+  </script>
+</body>
+
+Embedding Expressions in JSX:
+
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const fullName = (user) => user.firstName + " " + user.lastName;
+    const user = { firstName: "Rahul ", lastName: "Attuluri" };
+    const element = <h1 className="greeting"> Hello, {fullName(user)}!</h1>;
+    ReactDOM.render(element, document.getElementById("root"));
+  </script>
+</body>
+
+4.3 Nesting JSX elements
+The ReactDOM.render() method returns only one element in render. So, we need to wrap the element in parenthesis when writing the nested elements.
+
+
+<body>
+  <script type="text/babel">
+    const element = (
+      <div>
+        <h1 className="greeting">Hello!</h1>
+        <p>Good to see you here.</p>
+      </div>
+    );
+    ReactDOM.render(element, document.getElementById("root"));
+  </script>
+</body>
+
+
+13. What is meant by React JSX?
+React JS introduced a new HTML like syntax named JSX to create elements.
+
+const element = <h1 className="greeting">Hello World!</h1>;
+
+The above JSX element compiles to,
+
+const elementProps = { className: "greeting", children: "Hello World!" };
+const element = React.createElement("h1", elementProps);
+
+14. Can web browsers read JSX directly?
+Web browsers are capable to read the regular JS objects but not the JSX. Web browsers cannot read JSX directly.
+
+As browsers can read only the regular JS objects, then JSX needs to be converted to the regular JS object by using Babel.
+
+
+15. What is a React Fragment?
+The Fragment is an alternate way to return a single JSX element. It groups a list of children without adding extra nodes to the DOM.
+
+import { Fragment } from "react";
+
+const Welcome = () => (
+  <Fragment>
+    <h1>Hello, User</h1>
+    <p>You are learning React</p>
+  </Fragment>
+);
+
+export default Welcome;
+
+Short Syntax:
+
+const Welcome = () => (
+  <>
+    <h1>Hello, User</h1>
+    <p>You are learning React</p>
+  </>
+);
+
+export default Welcome;
+
+16. What is the purpose of render() in React?
+The render method is the required method in the class component.
+
+It is used to return the JSX that is displayed in the UI.
+It is called whenever the props are updated and state is updated using setState method.
+If more than one HTML element is to be rendered, then they must be grouped using a container element or react fragment.
+
+
+17. What is the syntax for Conditional Rendering?
+Conditional Rendering allows us to render different elements or components based on a condition.
+
+Different ways to implement Conditional Rendering are:
+
+Using an If...Else Statement
+
+import { Component } from "react";
+import "./App.css";
+
+class App extends Component {
+  state = { isLoggedIn: true };
+  ...
+  renderAuthButton = () => {
+    const { isLoggedIn } = this.state;
+    if (isLoggedIn === true) {
+      return <button>Logout</button>;
+    }
+    return <button>Login</button>;
+  };
+
+  render() {
+    return <div className="container">{this.renderAuthButton()}</div>;
+  }
+}
+
+export default App;
+
+Using Element Variables
+
+import { Component } from "react";
+import "./App.css";
+
+class App extends Component {
+  state = { isLoggedIn: true };
+  ...
+  render() {
+    const { isLoggedIn } = this.state;
+    let authButton;
+    if (isLoggedIn) {
+      authButton = <button>Logout</button>;
+    } else {
+      authButton = <button>Login</button>;
+    }
+    return (
+      <div className="container">
+        <h1>React JS</h1>
+        {authButton}
+      </div>
+    );
+  }
+}
+
+export default App;
+
+Using Ternary Operators
+
+import { Component } from "react";
+import "./App.css";
+
+class App extends Component {
+  state = { isLoggedIn: true };
+  ...
+  render() {
+    const { isLoggedIn } = this.state;
+    return (
+      <div className="container">
+        {isLoggedIn ? <button>Logout</button> : <button>Login</button>}
+      </div>
+    );
+  }
+}
+
+export default App;
+
+Using Logical && Operator
+
+import { Component } from "react";
+import "./App.css";
+
+class App extends Component {
+  state = { isLoggedIn: true };
+  ...
+  render() {
+    const { isLoggedIn } = this.state;
+    return (
+      <div className="container">
+        {isLoggedIn && <button>Logout</button>}
+        {!isLoggedIn && <button>Login</button>}
+      </div>
+    );
+  }
+}
+
+export default App;
+
+
+
+
+
+

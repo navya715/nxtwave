@@ -1,0 +1,51 @@
+1. What is the CSS display property?
+The CSS display property is the most important property for controlling layout.
+
+Using CSS display property,
+
+HTML element can be converted to inline or block-level element
+Layout for the children elements can be controlled
+Values of the CSS display property are:
+
+block
+inline
+flex
+inline-flex
+grid
+none, etc.
+
+Example:
+
+.container {
+  display: flex;
+}
+
+
+2. Explain CSS display property and its value inline-block?
+The CSS display property with the value inline-block displays the HTML element as an inline-block container.
+
+The inline-block container doesn't start on a new line but height and width can be applied to it.
+
+3. What are the differences between display: none and visibility: hidden?
+display: none	visibility: hidden
+1. It doesn't display the HTML element	1. It hides the HTML element (i.e cannot be seen in the layout/web page)
+2. Space will not be allocated for an HTML element in the layout	2. Space will be allocated for an HTML element in the layout
+
+
+4. How to convert inline elements to block-level elements?
+We can convert the inline elements to block-level elements using the CSS display property.
+
+The CSS property display with the value block converts any HTML element to a block-level element.
+
+.container {
+  display: block;
+}
+
+
+5. Explain CSS display property with the values inline and block?
+The CSS display property with the value block converts an HTML element to a block-level element.
+The block-level element always starts on a new line.
+It always takes up the full width available
+The CSS display property with the value inline converts an HTML element to an inline element.
+The inline element does not start on a new line.
+It only takes up as much width as necessary.

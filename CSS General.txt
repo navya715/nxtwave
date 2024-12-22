@@ -1,0 +1,11 @@
+1. How can we layout the page for large screens and small screens?
+We can build different layouts for large screens and small screens using:
+
+Bootstrap Grid System
+Media Queries
+Flexbox, etc.
+
+
+2. When do we use the CSS percentages?
+To define the size of a child element relative to its parent element, we use CSS percentages.
+

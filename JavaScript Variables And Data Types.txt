@@ -1,0 +1,142 @@
+1. Explain global and local variables in JavaScript?
+Local Variables:
+
+Local variables are variables that are defined within functions. They have local scope, which means that they can only be used within the functions that define them.
+
+Global Variables:
+
+Global variables are variables that are defined outside of functions. These variables have global scope, so they can be used in any function without passing as arguments.
+
+2. What are the differences between let and const variables in JS?
+let	const
+let is used for variable declaration. Variables declared with the let can change it's values	Variables declared with the const maintain constant values. const declarations share some similarities with let declarations
+let can be updated but not re-declared	const cannot be updated or re-declared
+let can be declared without being initialized	const must be initialized during declaration
+
+3. What are variables?
+Variables are like containers for storing values. We can create variables using the keywords like let, const, etc.
+
+4. What are global variables?
+Global variables are the variables that are available throughout the length of the code without any scope.
+
+5. What are the ways to define a variable in JavaScript?
+The three ways to define a variable are:
+
+const: If a variable is declared using const, then initialization is mandatory. Once the variable is initialized with a value, then it can't be reassigned and it will have the block scope.
+
+let: If a variable is declared using let, then initialization is not mandatory. This variable can be reassigned and it will have the block scope.
+
+var: If a variable is declared using var, then initialization is not mandatory. This variable can be reassigned and redeclared. Before executing the code, all the variable declarations are processed at first.
+
+6. What are the differences between var and let?
+basis of comparison	var	let
+Scope	Variables declared with var are scoped to the immediate function body (Function Scope)	variables declared with let are scoped to the immediate enclosing block denoted by { } (Block Scope)
+Hoisting	Variables declared with var are hoisted	Variables declared with let are not hoisted. Accessing variables before the declaration results in a Reference Error
+Redeclaration	Variables can be redeclared	Variables cannot be redeclared
+
+7. What are the differences between let, const, var?
+let	const	var
+If a variable is declared using let then initialization is not mandatory	If a variable is declared using const then initialization is mandatory	If a variable is declared using var then initialization is not mandatory.
+The variable can be reassigned	The variable can't be reassigned	The variable can be reassigned and redeclared
+The variable will have the block scope	The variable will have the block scope	The variable will have global scope or function scope
+
+8. Explain data types in js?
+The set of data types in the JavaScript are primitive values and objects.
+
+Examples for primitive data types:
+
+number
+string
+boolean
+null
+undefined
+symbol
+BigInt
+
+Example for Object data type:
+
+object
+
+9. Explain about undefined in JS?
+Undefined
+
+If a value is not assigned to the variable, then it takes undefined as its value.
+In JS, undefined refers to the value that is not being assigned to a variable.
+
+10. What are primitive data types in JS?
+Primitive Types
+
+number
+string
+boolean
+null
+undefined
+symbol
+
+11. What are the differences between null and undefined values?
+null	undefined
+null can be assigned to a variable as a representation of no value. It is used when we intentionally want a variable but don't need a value to it	undefined means a variable has been declared but has not yet been assigned to a value
+The datatype of null is object	The datatype of undefined is undefined itself
+
+12. What are the Datastructures in JavaScript?
+Data Structures allow us to store and organize data efficiently. This makes us access and performs operations on the data smoothly.
+
+In JavaScript, we have built-in Data Structures like,
+
+Arrays
+Objects
+Maps
+Sets
+
+
+13. What are the differences between Primitive Type and Reference Type?
+Primitive	Reference
+Primitives include Number, String, Boolean, Symbol, Undefined, etc.	References include Objects. i.e arrays, objects, etc.
+Primitives are immutable	References are mutable
+Primitives are passed by value	References are passed by reference
+
+
+14. What is the use of the string method Split?
+The split method is used to split a string into an array of substrings and returns the new array.
+
+Syntax: string.split(separator)
+
+Here, separator is a string used to separate substring of the string.
+
+Example:
+
+const string = "How are you doing today?";
+const result = string.split(" ");
+console.log(result);
+
+Output:
+
+["How", "are", "you", "doing", "today?"]
+
+Quick Tip
+If an empty string ("") is used as the separator, the string is split by each character.
+
+
+15. What is the use of the array method Join?
+The join method returns the array as a string. The elements will be joined by a specified separator.
+
+Syntax: arr.join(separator)
+
+Here separator is a string used to separate each item of the array. If omitted, the array items are joined with a comma.
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const energy = fruits.join();
+
+Output:
+
+Banana,Orange,Apple,Mango
+
+
+16. How to remove Whitespaces in a string?
+We use the trim method to remove whitespace from both ends of a string.
+
+Example:
+
+const greeting = "   Hello world!  ";
+console.log(greeting);
+console.log(greeting.trim()); // Output: Hello world!

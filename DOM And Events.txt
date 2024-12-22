@@ -1,0 +1,174 @@
+1. Define DOM in JavaScript?
+Document Object Model (DOM) is the structured representation of the HTML document created by the browser. It allows JavaScript to manipulate, structure, and style our website.
+
+2. Name some JavaScript DOMs?
+Core DOM: standard model for all document types.
+XML DOM: standard model for XML documents.
+HTML DOM: standard model for HTML documents.
+
+3. What is real DOM?
+Real DOM is nothing but DOM. DOM stands for Document Object Model. It is a structured representation of the HTML elements that are present in a webpage or web app. It represents the entire UI of your application.
+
+4. How do you access the value of an HTML input element in JS?
+We can simply use the value property of the HTML input element to get the value of the text input field.
+
+Example:
+
+const inputEl = document.getElementById("myInput");
+const inputElValue = inputEl.value;
+
+5. What are the JavaScript DOM properties?
+Some of the JavaScript DOM properties are:
+
+classList
+id
+style
+textContent etc.
+
+6. How to add CSS styles dynamically?
+We can add styles dynamically by using setAttribute and classList.add methods.
+
+By using setAttribute method:
+
+const paragraphEl = document.getElementById("paragraph");
+paragraphEl.setAttribute("style", "color:red;");
+
+By using classList.add method:
+
+.paragraph {
+  color: green;
+}
+
+paragraphEl.classList.add('paragraph');
+
+7. How to add a class to an HTML element dynamically?
+The classList property can modify the class names dynamically using add(), remove(), replace() and toggle() methods.
+
+Example: Using classList.add method
+
+const div = document.createElement('div');
+div.classList.add("anotherclass");
+
+8. How to change the background color of an HTML element without using CSS selectors?
+
+Using inline styles
+
+<div style="background-color: blue">...</div>
+
+Using JS
+
+let containerEl = document.getElementById("container");
+containerEl.style.backgroundColor = "blue";
+
+9. What are the different DOM methods used to access HTML elements from JavaScript?
+Some of the DOM methods to access the HTML elements from JavaScript are:
+
+getElementsByClassName('classname'): Returns all the elements that have the specified class name. It returns an array-like object.
+
+getElementById('id'): Returns the element that has the specified id.
+
+getElementsByTagName('tagname'): Returns all the elements that have the specified tag name. It returns an array-like object.
+
+querySelector(): Takes CSS style selector as argument and returns the first selected HTML element.
+
+10. What is meant by a DOM Manipulation?
+DOM manipulation is interacting with the DOM to change/modify the HTML document that is to be rendered on the web browser. 
+
+This HTML document can be changed/modified to add elements, remove elements, edit elements, move elements around, etc.
+
+11. How do you create an HTML element in JavaScript?
+We can create an HTML element using the DOM method createElement().
+
+Example:
+
+let headingEl = document.createElement("h1");
+headingEl.textContent = "Web Technologies";
+
+12. What is an event?
+An HTML event can be something the browser does or something a user does.
+
+Some of the examples of HTML events are:
+
+An HTML web page has finished loading.
+An HTML input field was changed.
+An HTML button was clicked.
+
+13. Explain about an event listener in JS?
+An Event Listener listens for events and gets triggered when an event occurs.
+
+The addEventListener() is modern approach to add an event listener.
+
+Syntax: 
+
+element.addEventListener(event, function);
+
+The function is called whenever the described event gets fired.
+Any number of event handlers can be added to a single element without overwriting existing event handlers.
+
+14. What would be the example for triggering a function when a button is clicked?
+
+<!DOCTYPE html>
+<html>
+   <head></head>
+   <body>
+      <p>Click the following button and see result</p>
+      <button id="button" >Click</button>
+   </body>
+</html>
+
+const inputEl = document.getElementById('button');
+
+inputEl.addEventListener('click', (event) => {
+   console.log("You did it");
+});
+
+
+15. What is a blur event?
+The blur event is triggered when an element has lost focus. 
+
+Example:
+
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+      <input type="text" id="textInput" placeholder="text input"/>
+      <input type="password" id="passwordInput" placeholder="password"/>
+  </body>
+</html>
+
+const inputEl = document.getElementById('textInput');
+
+inputEl.addEventListener('blur', (event) => {
+    if(event.target.value==="")
+        event.target.style.background = 'red';
+    else
+        event.target.style.background = 'white';
+});
+
+16. What are the different types of events?
+Some of the most common event types and event names are: 
+
+Mouse Events: mousedown, mouseup, click, dblclick, mousemove, mouseover, mousewheel, mouseout, contextmenu
+Touch Events: touchstart, touchmove, touchend, touchcancel
+Keyboard Events: keydown, keypress, keyup
+Form Events: focus, blur, change, submit
+window events: scroll, resize, hashchange, load, unload
+
+17. What is prevent default method?
+The preventDefault method prevents the occurrence of default action.
+
+Example:
+
+let myFormEl = document.getElementById("myForm");
+
+myFormEl.addEventListener("submit", function (event) {
+  event.preventDefault();
+});
+
+Here in the form, it prevents the default behaviour of the submit event.
+
+
+
+
+

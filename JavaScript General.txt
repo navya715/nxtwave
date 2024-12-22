@@ -1,0 +1,350 @@
+1. What is JavaScript?
+JavaScript is a programming language used both on the client-side and server-side that allows you to make web pages interactive.
+
+It improves the user experience of the web page by converting it from a static page into an interactive one (dynamic page).
+
+
+2. What is the use of a JavaScript?
+Some of the uses of JavaScript are:
+
+Adds interactive behavior to web pages
+Creates web and mobile apps
+Builds web servers and develops server applications
+Game development, etc.
+
+3. What is the use of a document in JavaScript?
+JavaScript Document object is an object that provides access to all HTML elements of a document. It has various properties that refer to other objects which allow us to access and modify the document content.
+
+4. What are the differences between JavaScript and Java?
+JavaScript	Java
+JavaScript is a scripting language	Java is a programming language
+JavaScript code is run on a browser only	Java creates applications that run in a virtual machine or browser
+JavaScript file has the file extension .js	Java file has the file extension .java
+
+5. How to print in JS?
+We can use the console.log() to print to JavaScript console. The JavaScript console.log method is mainly used for code debugging as it makes the JavaScript print the output to the console.
+
+Example:
+
+console.log("Hello World!");
+
+6. What is execution context?
+Execution Context
+
+The environment in which Code runs is called Execution Context.
+Execution context contains all the variables, objects, and functions.
+Execution Context is destroyed and recreated whenever we reload an Application.
+
+7. How to display the output in JavaScript (not in the console)?
+JavaScript can display data in different ways:
+
+textContent
+
+let displayEl = document.getElementById("display");
+displayEl.textContent = 10 + 15;
+
+innerHTML
+
+let displayEl = document.getElementById("display");
+displayEl.innerHTML = 10 + 15;
+
+document.write()
+
+document.write(10 + 15);
+
+alert
+
+alert(10 + 15)
+
+8. List some of the advantages of JavaScript.
+Server interaction is less.
+Feedback to the visitors is immediate.
+Interactivity is high.
+
+9. What is the output of 10+20+"30" in JavaScript?
+3030
+
+10. What language is JavaScript?
+JavaScript is known as the Scripting Language for Web pages.
+
+It is used add interactivity in Webpages.
+
+
+11. Where do you write JavaScript?
+We can write JavaScript in the HTML script element.
+
+The HTML script element contains script statements, or it points to an external script file through the HTML src attribute.
+
+12. How to add JS to HTML?
+There are three ways to add JavaScript to HTML pages.
+
+Embedding code
+Inline code
+External file
+Embedding code: We can use the HTML script element to wrap around JavaScript code inside the HTML program.
+
+Inline code: It can be used when we have to call a function in the HTML event attributes.
+
+External file: We can also create a separate file to hold the code of JavaScript with the .js extension and later add it into our HTML document using the HTML src attribute of the HTML script element.
+
+13. What is the solution to the absence of an HTML script element without an HTML src attribute?
+The solution to the absence of an HTML script element without an HTML src attribute is to embed the JavaScript code in the HTML document using HTML script element.
+
+Example
+
+<script type="text/javascript">
+  let buttonEl = document.getElementById("button");
+
+  buttonEl.addEventListener("click", function (event) {
+    console.log("button is clicked");
+  });
+</script>
+
+14. Who created JavaScript?
+The JavaScript was created by Brendan Eich at Netscape.
+
+
+15. How to convert a string to a number?
+We can convert a string to a number using the parseInt method.
+
+
+16. What is an alert method in JS?
+The alert methods instructs the browser to display a dialog with an optional message, and to wait until the user dismisses the dialog.
+
+Example:
+
+alert("Hello")
+
+
+17. How do you debug errors in JavaScript?
+Using console.log() Method
+
+Setting Breakpoints or using Debugger in code
+
+Using Browser Debugging tools
+
+Note
+
+To know more about debugging errors, refer to below references.
+
+https://raygun.com/learn/javascript-debugging-tips
+
+https://www.w3schools.com/js/js_debugging.asp
+
+18. How can we submit a form in js?
+We can submit the form,
+
+By clicking the HTML button element with type submit.
+By clicking the HTML input element with type submit.
+
+19. How to implement the form validation in JavaScript?
+
+let nameEl = document.getElementById("name");
+let nameErrMsgEl = document.getElementById("nameErrMsg");
+
+let emailEl = document.getElementById("email");
+let emailErrMsgEl = document.getElementById("emailErrMsg");
+
+let workingStatusEl = document.getElementById("status");
+let genderMaleEl = document.getElementById("genderMale");
+let genderFemaleEl = document.getElementById("genderFemale");
+
+let myFormEl = document.getElementById("myForm");
+
+let formData = {
+  name: "",
+  email: "",
+  status: "Active",
+  gender: "Male"
+};
+
+nameEl.addEventListener("change", function(event) {
+  if (event.target.value === "") {
+    nameErrMsgEl.textContent = "Required*";
+  } else {
+    nameErrMsgEl.textContent = "";
+  }
+
+  formData.name = event.target.value;
+});
+
+emailEl.addEventListener("change", function(event) {
+  if (event.target.value === "") {
+    emailErrMsgEl.textContent = "Required*";
+  } else {
+    emailErrMsgEl.textContent = "";
+  }
+
+  formData.email = event.target.value;
+});
+
+workingStatusEl.addEventListener("change", function(event) {
+  formData.status = event.target.value;
+});
+
+genderMaleEl.addEventListener("change", function(event) {
+  formData.gender = event.target.value;
+});
+
+genderFemaleEl.addEventListener("change", function(event) {
+  formData.gender = event.target.value;
+});
+
+function validateFormData(formData) {
+  let {name, email} = formData;
+  if (name === "") {
+    nameErrMsgEl.textContent = "Required*";
+  }
+  if (email === ""){
+    emailErrMsgEl.textContent = "Required*";
+  }
+}
+
+function submitFormData(formData) {
+  let options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+      Authorization:
+        "Bearer 00f3f8fde06120db02b587cc372c3d85510896e899b45774068bb750462acd9f",
+    },
+    body: JSON.stringify(formData)
+  };
+
+  let url = "https://gorest.co.in/public-api/users";
+
+  fetch(url, options)
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(jsonData) {
+      console.log(jsonData);
+      if (jsonData.code === 422) {
+        if (jsonData.data[0].message === "has already been taken") {
+          emailErrMsgEl.textContent = "Email Already Exists";
+        }
+      }
+    });
+}
+
+myFormEl.addEventListener("submit", function(event){
+  event.preventDefault();
+  validateFormData(formData);
+  submitFormData(formData);
+});
+
+20. How many scopes of a variable does JavaScript have?
+JavaScript Variable has two scopes, local and global.
+
+Local Scope:
+
+If a variable is declared with const or let within a curly brace ({}), then it is said to be defined in the Block Scope.
+
+Example:
+
+function isEven(){
+    let number = 2;
+   return number%2 === 0
+}
+isEven()
+
+Global Scope:
+
+If a variable is declared outside all functions and curly braces ({}), then it is said to be defined in the Global Scope.
+
+Example:
+
+let number = 2;
+
+function isEven(){
+   return number%2 === 0
+}
+isEven()
+
+21. What are functions hoisting and variables hoisting?
+Hoisting is a JavaScript technique that moves variables and function declarations to the top of their scope before code execution begins.
+
+Example:
+
+console.log(functionBelow("Hello"));
+
+function functionBelow(greet) {
+  return `${greet} world`;
+}
+
+console.log(functionBelow("Hi"));
+
+Output:
+
+Hello world
+Hi world
+
+Even though the function declaration is after the function call, the function is called. This is possible due to function hoisting.
+
+22. What are the differences between class and object?
+
+Class	object
+Class is a template for creating objects in a program	Object is an instance of a class
+Class is a logical entity	Object is a physical entity
+Class does not allocate memory space	Object allocates memory space
+You can declare class only once	You can create more than one object using a class
+Classes can't be manipulated	objects can be manipulated
+Classes doesn't have any Values	Objects have its own values
+You can create a class using the "class" keyword	You can create an object using the "new" keyword in JavaScript
+
+23. Define class and object?
+Class:
+
+The Class is a special type of function used for creating multiple objects.
+
+Syntax:
+
+class ClassName {
+  constructor() {}
+  method_1() {}
+  method_2() {}
+  method_3() {}
+}
+
+Object:
+
+An Object is a collection of properties.
+A property is an association between a name (or key) and a value.
+For example, a person has a name, age, city, etc. These are the properties of the person.
+
+let person = {
+  firstName: "Rahul",
+  lastName: "Attuluri",
+  age: 28,
+};
+
+24. What is Class Inheritance in JavaScript?
+Inheritance is a mechanism by which a class inherits methods and properties from another class.
+
+Syntax:
+
+class SuperClass {
+  constructor(property1) {
+    this.property1 = property1;
+  }
+  method1() {}
+}
+class SubClass extends SuperClass {
+  constructor(property1, property2) {
+    super(property1);
+    this.property2 = property2;
+  }
+  method1() {}
+}
+let myObject = new SubClass(property1, property2);
+
+Here, SubClass inherits methods and properties from a SuperClass.
+
+The extends keyword is used to inherit the methods and properties of the superclass.
+
+Calling super() makes sure that SuperClass constructor() gets called and initializes the instance.
+
+
+
+

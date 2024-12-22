@@ -1,0 +1,93 @@
+1. What is meant by the HTML href attribute?
+The HTML href attribute is the most important attribute of the HTML anchor element.
+
+It specifies the URL/path of the page the link goes to.
+
+2. What is an HTML class attribute?
+The HTML class attribute is used to specify a class name for an HTML element.
+
+3. Why do we use the HTML id attribute?
+The HTML id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.
+
+It can be used for styling an HTML element using CSS.
+It is also used by JavaScript to access and manipulate the HTML elements with the specific id.
+
+
+4. Name some of the attributes used in HTML?
+Some of the attributes used in HTML are:
+
+class
+id
+href
+src
+for
+width
+height
+name
+alt
+style
+checked
+type etc,.
+
+5. What is the value given to the HTML href attribute?
+The value of the HTML href attribute is URL/path of the page where the link goes to.
+
+6. What are the HTML attributes?
+The HTML attributes provide additional information about HTML elements. 
+
+They are always specified in the start tag.
+They usually come in name/value pairs like: name="value"
+Examples: src, style, alt, etc.
+
+7. What are the differences between the HTML id attribute and the HTML class attribute?
+class	id
+The HTML class attribute specifies a class name for an HTML element	The HTML id attribute specifies a unique id for an HTML element.
+It is used to apply styles to multiple elements with the class name	It is used to apply styles to a single element
+One or more HTML elements can have the same class name	The id must be unique within the HTML document. There shouldn't be more than one element with the same id
+
+8. Can multiple HTML elements have the same id?
+No. There shouldn't be more than one HTML element with the same id.
+
+The id must be unique within the HTML document.
+
+
+9. Can we use the HTML p element inside an HTML span element?
+The HTML span element is an inline element, which should contain only other inline elements.
+
+So as span is an inline element and p is a block-level element, we can't use the p element inside a span element.
+
+Note
+Not all the HTML inline elements should contain only other inline elements. There are few exceptions for it. Example: HTML anchor element, etc.
+
+10. Can we write an HTML div element in another HTML div element?
+We can write multiple HTML div elements in another HTML div element.
+
+
+
+11. What is the difference between HTML and JavaScript?
+JavaScript	HTML
+JavaScript is a programming language that makes web pages more interactive and dynamic	HTML is a markup language that is used to describe the structure and layout of web pages
+
+12. What is a viewport?
+Viewport: The browser's viewport is the area of the window in which web content can be seen.
+
+
+13. What are the differences between HTML and Python?
+HTML	Python
+HTML is a markup language that is used to describe the structure and layout of web pages	Python is an interpreted, object-oriented, high-level programming language
+It is generally used to format the output (How to appear on a website)	It is generally used to instruct a computer to perform certain actions on an input and return an output
+
+
+14. Write some HTML code snippets?
+HTML code snippet:
+
+ <!DOCTYPE html>
+  <html>
+    <head> </head>
+    <body>
+      <div>
+        <h1>Heading</h1>
+      </div>
+    </body>
+  </html>
+

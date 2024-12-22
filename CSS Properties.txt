@@ -1,0 +1,216 @@
+1. What is the default font family?
+Depending on the browser, the default font family changes.
+
+
+2. What is the correct syntax for font family?
+The CSS font-family property specifies the font of an HTML element.
+
+It can hold several font names as a fallback system. If the browser does not support the first font, it tries the next font.
+
+Example:
+
+p {
+  font-family: "Georgia", "serif";
+}
+
+
+It is recommended to quote the font family names that contain white spaces, digits, or punctuation characters other than hyphens.
+
+To avoid mistakes, we are giving quotes to all font family names.
+
+3. What is the correct way to write fonts with sans serif as a fallback?
+
+h1 {
+  font-family: "Arial", "sans-serif";
+}
+
+4. What are the CSS text properties?
+Some of the CSS text properties are:
+
+color
+text-align
+text-decoration
+direction
+letter-spacing
+text-shadow
+text-transform
+word-spacing
+text-indent, etc.
+
+
+5. How to align the button to the right without using the Bootstrap grid system?
+
+Using CSS Flexbox properties
+
+<div class="division">
+  <button>Button</button>
+</div>
+
+.division {
+  display: flex;
+  justify-content: flex-end;
+}
+
+Using CSS text-align property
+
+<div class="division">
+  <button>Button</button>
+</div>
+
+.division {
+  text-align: right;
+}
+
+
+6. How to center the text horizontally?
+The CSS text-align property is used to set the horizontal alignment of a text.
+We can use the CSS text-align property with the value center to center the text horizontally
+
+<p>Plan your trip.</p>
+
+p {
+  text-align: center;
+}
+
+
+7. How do we underline the text in an HTML paragraph element?
+The CSS text-decoration property with the value underline is used to underline the text in the HTML elements.
+
+The CSS text-decoration property specifies the decoration added to the text.
+
+Example:
+
+.paragraph {
+  text-decoration: underline;
+}
+
+8. How to apply background color and color for the HTML main heading element?
+
+h1 {
+  background-color: #eb8f34;
+  color: #ffffff;
+}
+
+9. What are the CSS Background properties?
+The following are the CSS Background properties:
+
+background-color
+background-image
+background-position
+background-size
+background-repeat
+background-origin
+background-clip
+background-attachment, etc.
+
+10. How to stop background image repeating for empty space?
+We can use the CSS property background-repeat with the value no-repeat to stop repeating the background image.
+
+Example:
+
+.card {
+  background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png");
+  background-repeat: no-repeat;
+}
+
+
+11. Explain CSS background attachment property?
+The CSS background-attachment property specifies the behaviour of the background image when the page is scrolled.
+
+Values of the CSS background-attachment property are:
+
+Value	Description
+scroll	background image scrolls along with the HTML element.
+fixed	background image doesn't scroll with the HTML element. It will be fixed with the viewport.
+
+.card {
+  background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png");
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+
+12. Explain CSS background color property?
+The CSS background-color property specifies the background color of an HTML element.
+
+.card {
+  background-color: lightblue;
+}
+
+13. Explain CSS background image property?
+The CSS background-image property specifies one or more background images of an HTML element.
+
+Syntax:
+
+body {
+  background-image: url("image1.png"), url("image2.png");
+}
+
+14. What is a CSS Gradient?
+CSS Gradient is a special type of Background Image formed by the transition between two or more colors.
+
+There are mainly two types of gradients:
+
+Linear Gradient
+Radial Gradient
+Linear Gradient
+
+It is the most basic type of gradient. To create a gradient, we must have at least two colors.
+
+Syntax:
+
+background-image: linear-gradient(direction, color1, color2);
+
+By default, linear gradients run from top to bottom. You can change their transition by specifying a direction.
+
+Direction	Description
+to top	Colors transition (change) from bottom to top
+to bottom	It is a default direction. Colors transition (change) from top to bottom
+to left	Colors transition (change) from right to left
+to right	Colors transition (change) from left to right
+
+Radial Gradient
+
+Radial Gradients radiate out from a central point.
+
+Example:
+
+<div class="radial-gradient-background"></div>
+
+15. What is the CSS box shadow property?
+The CSS box-shadow property attaches one or more shadows to an HTML element. It accepts either the none value that indicates no shadows or a comma-separated list of shadows ordered front to back.
+
+Specify a box-shadow using,
+
+Two, three, or four length values.
+If only two values are given, they are interpreted as offset-x and offset-y values.
+If a third value is given, it is interpreted as a blur-radius.
+If a fourth value is given, it is interpreted as a spread-radius.
+Optionally, the inset keyword.
+Optionally, a color value.
+
+Value	Description
+none	Default value. No shadow is displayed
+h-offset	(Required) It specifies the horizontal distance. A positive value puts the shadow on the right side of the box, a negative value puts the shadow on the left side of the box
+v-offset	(Required) It specifies the vertical distance. A positive value puts the shadow below the box, a negative value puts the shadow above the box
+blur	(Optional) It specifies the blur radius. The higher the number, the more blurred the shadow will be
+spread	(Optional) The spread radius. A positive value increases the size of the shadow, a negative value decreases the size of the shadow
+color	(Optional) It specifies the color of the shadow
+inset	(Optional) If not specified (default), the shadow is a drop shadow (box seems raised above the content). If specified, the shadow is an inset shadow (shadows are drawn inside the border, above the background, but below content)
+
+To see how the CSS box-shadow property varies with different values, please refer to the Box Shadow Generator.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+1. How do you use Bootstrap to make a page responsive?
+We can make a page responsive by using the Bootstrap Grid System which helps us to create columns and rows to build a responsive layout of the page.
+
+2. What is the Bootstrap grid system?
+Bootstrap Grid System is a collection of reusable code snippets to create responsive layouts. It is made up of containers, rows, and columns.
+
+It uses a 12 column system for the layouting. We can create up to twelve columns across the page.
+
+Container : The purpose of a container is to hold rows and columns.
+
+Row : The purpose of a row is to wrap all the columns.
+
+Column : We should place the columns inside a row and the content inside a column.
+We can specify the number of columns our content should occupy in any device. The number of columns we specify should be a number in the range of 1 to 12.
+The Bootstrap class names col-* indicates the number of columns you would like to use out of the possible twelve columns per row. For example, col-1, col-5, etc.
+
+3. Can a 14 or 16 column grid system be made?
+Bootstrap supports the customization of Bootstrap grid class names.
+
+The number of grid columns can be modified by Sass variables. Sass variables are similar to the JS variables where we used to store the information.
+
+$grid-columns is used to generate the widths (in percent) of each column
+$grid-gutter-width sets the padding between the columns.
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+4. What is col and span in Bootstrap?
+col means column in Bootstrap. Bootstrap Grid System allows up to 12 columns across the page and each column is represented as a span.
+
+5. What is a Bootstrap Container?
+The container is the most basic layout class name in Bootstrap and is required when using the Bootstrap Grid System.
+
+The purpose of a container is to hold rows and columns.
+
+Bootstrap comes with three different containers:
+
+.container: It is a responsive, fixed-width container. Its max-width changes at each breakpoint.
+.container-fluid: It is a full-width container spanning the entire width of the viewport. (width: 100%)
+.container-{breakpoint}: It is 100% wide until the specified breakpoint. For higher breakpoints, it takes the max-width.
+
+6. What are the Bootstrap class names for different breakpoints?
+Bootstrap Grid Columns
+
+Bootstrap provides different Bootstrap Grid Column class name prefixes for Five Responsive Tiers (Responsive Breakpoints).
+
+Device	Device Size (Width)	Class Name Prefix
+Extra small devices	<576px	col-
+Small devices	>=576px	col-sm-
+Medium devices	>=768px	col-md-
+Large devices	>=992px	col-lg-
+Extra large devices	>=1200px	col-xl-
+Display Utilities
+
+Examples: d-none, d-sm-none, d-md-none, etc.
+
+
+7. What are the predefined class names of margin and padding in Bootstrap?
+Margin Bootstrap class names	Padding Bootstrap class names
+m-*, mt-*, mr-*, mb-*, ml-*	p-*, pt-*, pr-*, pb-*, pl-*
+The asterisk (*) symbols can be any number in the range of 0 to 5 or auto.

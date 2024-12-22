@@ -1,0 +1,93 @@
+.awsome-features-card-image {
+
+    height: 20vh;
+
+    padding: 15px;
+
+    margin: 15px;
+
+}
+
+
+
+.awsome-features-card-container {
+
+    padding: 5px;
+
+    margin: 5px;
+
+}
+
+
+
+.awsome-features-details-container {
+
+    padding: 5px;
+
+    margin: 5px;
+
+}
+
+
+
+.awsome-features-card-title {
+
+    padding: 5px;
+
+    font-family: "Roboto";
+
+    font-size: 20px;
+
+    color: #323f4b;
+
+    margin: 5px;
+
+}
+
+
+
+.awsome-features-card-description {
+
+    padding: 2px;
+
+    font-family: "Roboto";
+
+    font-size: 15px;
+
+    color: #7b8794;
+
+}
+
+
+
+.features-section-heading {
+
+    font-family: "Roboto";
+
+    font-size: 25px;
+
+    color: #323f4b;
+
+    padding: 5px;
+
+    margin: 5px;
+
+}
+
+
+
+.features-section-caption {
+
+    color: #9aa5b1;
+
+    font-family: "Roboto";
+
+    font-size: 15px;
+
+    padding: 5px;
+
+    margin: 5px;
+
+}
+
+.head-section {}

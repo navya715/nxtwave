@@ -1,0 +1,14 @@
+p {
+    color: white;
+    background-color: grey;
+    font-family: "Roboto";
+    padding: 10px;
+}
+
+.blue-bg {
+    background-color: dodgerblue;
+}
+
+.orange-bg {
+    background-color: orange;
+}

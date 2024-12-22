@@ -1,0 +1,46 @@
+1. What are the different button styles in Bootstrap 4?
+Some of the button styles in Bootstrap 4 are:
+
+Button Styles	Class names
+Buttons with different colors	btn-primary, btn-secondary, etc
+Outline buttons with different colors	btn-outline-primary, btn-outline-secondary, etc.
+Buttons with different sizes (Small, large)	btn-sm, btn-lg
+Block-level buttons	btn-block
+
+2. Design two HTML buttons, success and danger, using Bootstrap class names.
+
+<button class="btn btn-success">Get Started</button>
+<button class="btn btn-danger">Get Started</button>
+
+3. How to add an HTML button and style it using Bootstrap to the existing HTML document?
+Add the HTML button element in the HTML body element.
+Include the Bootstrap CDN in the HTML head element.
+Add the Bootstrap button class names to the HTML button element.
+
+<button class="btn btn-success">Get Started</button>
+
+
+4. What are the types of lists supported by Bootstrap?
+Bootstrap supports all three types of lists, ordered (ol), unordered(ul) and description(dl) lists.
+
+5. What is a Carousel?
+The Carousel is a slideshow for cycling through images, text, etc. Slides will change for every few seconds.
+
+We can add the different images in the Carousel by changing the image URL in the value of the HTML src attribute.
+
+Bootstrap carousels support previous/next controls and indicators, etc.
+
+https://getbootstrap.com/docs/4.5/getting-started/introduction/
+
+
+6. Which of the following is not the Bootstrap background class name?
+a. bg-info
+
+b. bg-primary
+
+c. bg-danger
+
+d. bg-error
+
+Answer: Option D - bg-error
+

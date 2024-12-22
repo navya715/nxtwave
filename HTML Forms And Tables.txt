@@ -1,0 +1,87 @@
+1. Explain HTML form element?
+The HTML form element can be used to create HTML forms. It is a container that can contain different types of elements like,
+
+input
+label
+select
+textarea
+button
+fieldset
+legend
+data list
+output
+option
+optgroup, etc.
+
+2. What are forms and how to create forms in HTML?
+The form is used to collect the user inputs. HTML provides a form element to create forms.
+
+Example:
+
+<form action="/submit_data.php">
+  <label>Enter your name: </label>
+  <input type="text" name="name" />
+  <label>Enter Mobile number </label>
+  <input type="number" name="mobile_no" />
+  <input type="submit" value="Submit" />
+</form>
+
+3. What is checkbox and how to use checkbox?
+To define a Checkbox, We need to specify the HTML type attribute with the value checkbox for an HTML input element.
+
+Example:
+
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike1" />
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Bike2" />
+
+
+4. What are the differences between the HTML checkbox and radio input elements?
+HTML radio input element:
+
+It is used when only one option to be selected out of several available options.
+It is created by using an HTML input element with the type attribute value is set to radio.
+HTML checkbox input element:
+
+It is used when more than one option to be selected out of several available options.
+It is also created by using the HTML input element with the type attribute value is set to checkbox.
+
+5. How to create a single-line text box for searching queries?
+The HTML input element with the type search is used to add a single line text box for searching queries.
+
+Example:
+
+<input type="search" />
+
+6. What is an HTML checked attribute?
+The HTML checked attribute specifies that an input element should be pre-selected (checked) when the page loads.
+
+<input type="radio" id="genderMale" value="Male" name="gender" checked />
+
+7. What are the different types of input element available and their uses?
+The HTML input element can be displayed in several ways, depending on the HTML type attribute.
+
+Below are some of the input types:
+
+type="text"
+Defines a one-line text input field.
+type="password"
+Defines a one-line password input field.
+type="submit"
+Defines a submit button to submit the form to the server.
+type="radio"
+Defines a radio button that is used when user has to select one option.
+type="checkbox"
+Defines a checkbox that is used when user has to select multiple options.
+
+
+8. How to create a combobox in HTML?
+The HTML select element is used to create a combobox or drop-down list of options. 
+
+The HTML option element should be inside the HTML select element for defining options in the drop-down list.
+
+Syntax:
+
+<select>
+  <option>option1</option>
+  <option>option2</option>
+</select>

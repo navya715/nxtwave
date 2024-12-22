@@ -1,0 +1,326 @@
+1. What is JSON and its common operations?
+JSON stands for JavaScript Object Notation.
+
+It is a data representation format used for:
+
+Storing data (Client/Server)
+Exchanging data between Client and Server
+It is just a text file with an extension of .json
+
+Common JSON operations:
+
+Parsing: It parses a JSON string and returns a corresponding value (object, etc.).
+
+Example:
+
+let profile = {
+  name: "Rahul",
+  age: 29,
+  designation: "Web Developer"
+};
+console.log(JSON.parse(profile)) // {"name":"Rahul","age":29,"designation":"Web Developer"}
+
+Stringification: It converts the given value into JSON string.
+
+Example:
+
+let profile = {
+  name: "Rahul",
+  age: 29,
+  designation: "Web Developer"
+};
+console.log(JSON.stringify(profile)) // '{"name":"Rahul","age":29,"designation":"Web Developer"}'
+
+2. What is the syntax of a JSON object?
+In JSON, all keys in an object must be enclosed with double-quotes. While in JS, this is not necessary.
+
+So, keys  must be strings, written with double quotes in JSON.
+
+JS:
+
+let profile = {
+  name: "Rahul",
+  age: 29,
+  designation: "Web Developer"
+};
+
+JSON:
+
+{
+  "name": "Rahul",
+  "age": 29,
+  "designation": "Web Developer"
+}
+
+3. How do you access keys from JSON string?
+First, parse the stringified JSON using the JSON.parse method and then access keys from the returned object.
+
+Example:
+
+const myJSON = '{"name":"John", "age":30, "car":null}';  
+const myObj = JSON.parse(myJSON);  
+const name = myObj.name;  
+
+console.log(name); // Output: John
+
+4. Explain about async and await in JavaScript?
+Async: The keyword async before a function makes the function return a promise.
+
+Await: The keyword await before a function makes the function wait for a promise.
+
+Note
+The await keyword can only be used inside an async function.
+
+5. Why do we use Async and Await?
+The Async/Await is a modern way to consume promises. The await ensures processing completes before the next statement executes.
+
+We can avoid chaining promise altogether using async/await.
+It allows asynchronous execution while maintaining a regular, synchronous feel and readability.
+
+6. Which one would you prefer between Promises or async/await?
+The async/await simply gives you a synchronous feel to asynchronous code. It's a very elegant form of syntactical sugar and is more readable.
+
+For simple queries and data manipulation, Promises can be preferred otherwise we will prefer async/await.
+
+7. What is an Asynchronous Execution?
+In Asynchronous execution, the second statement won't wait until the first statement execution.
+
+Example: Fetch
+
+const url = "https://apis.ccbp.in/jokes/random";
+
+fetch(url)
+  .then((response) => {
+    return response.json();
+  })
+  .then((jsonData) => {
+    //statement-1
+    console.log(jsonData);
+  });
+
+//statement-2
+console.log("fetching done");
+
+Output:
+
+fetching done
+Object{ value:"The computer tired when it got home because it had a hard drive" }
+
+
+
+8. What is a fetch method in JS?
+The fetch method is used to fetch resources across the Internet. It returns a promise.
+
+Syntax: 
+
+fetch(URL, OPTIONS)
+
+URL: URL of the resource
+OPTIONS: Request Configuration
+Request Configuration:
+
+We can configure a request by passing an options object with required properties like,
+
+Request Method
+Headers
+Body
+Credentials
+Cache, etc.
+
+Example:
+
+let options = {
+  method: "GET",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(data)
+};
+
+fetch("https://gorest.co.in/public-api/users", options);
+
+10. What are HTTP request methods?
+HTTP Methods indicate the desired action to be performed for a given resource.
+
+Name	Description
+GET (Read)	Request for a resource(s) from the server
+POST (Create)	Submit data to the server
+PUT (Update)	The data within the request must be stored at the URL supplied, replacing any existing data
+DELETE (Delete)	Delete a resource(s)
+
+
+11. What is the difference between the HTTP GET method and the HTTP POST method?
+The HTTP GET method is used to retrieve (get) data from a specified resource while the HTTP POST method is used to send data to the server.
+
+12. What is meant by try...catch statement?
+The try block includes the code that might generate an error.
+
+The catch includes the code that is executed when an error occurs inside the try block.
+
+Syntax:
+
+try {
+  // Block of code to try
+}
+catch(err) {
+  // Block of code to handle errors
+}
+
+13. Where do we use try...catch statements?
+We use the try-catch statements when our code has a chance of throwing an exception which need to be handled.
+
+14. Explain about SetInterval(), SetTimeout() ?
+setTimeout()	setInterval()
+setTimeout() allows us to run a function once after the interval of time.	setInterval() allows us to run a function repeatedly, starting after the interval of time, then repeating continuously at that interval.
+
+15. How to stop setTimeout()?
+By using clearTimeout() method we can stop setTimeout().
+A call to setTimeout returns a timer identifier timerId that we can use to cancel the execution.
+
+Example:
+
+let timerId = setTimeout(function () {
+  alert("Hello");
+}, 3000);
+clearTimeout(timerId);
+
+16. Explain about setInterval and clearInterval methods in JavaScript?
+setInterval():
+
+The setInterval method allows us to run a function at the specified interval of time repeatedly.
+
+Syntax: 
+
+setInterval(function, delay);
+
+function: A callback function that is called repeatedly at the specified interval of time (delay).
+delay: time in milliseconds. (1 second = 1000 milliseconds)
+
+clearInterval():
+
+The clearInterval() method cancels a schedule previously set up by calling setInterval().
+To execute clearInterval() method, we need to pass the uniqueId returned by setInterval() as an argument.
+
+Syntax: 
+
+clearInterval(uniqueId);
+
+17. Can you explain the below code, and How it works?
+
+console.log(1);
+console.log(2);
+
+setTimeout(() => {
+  console.log(3);
+}, 6);
+
+console.log(4);
+
+Output:
+
+ 1
+ 2
+ 4
+ 3
+
+Here, setTimeout(()=>{console.log(3)},6)
+
+The function in setTimeout executes after completing the time specified in the second parameter. So 4 is logged before 3.
+
+18. What is the difference between Promises and Callback?
+Promises	Callbacks
+With promises, the executing function returns a special object to us and then we tell the promise what to do when the asynchronous task completes.	With callbacks, we tell the executing function what to do when the asynchronous task completes.
+
+
+19. What is a callback function?
+A callback function is a function passed into another function as an argument.
+
+Example:
+
+function greeting(name) {
+  alert("Hello " + name);
+}
+
+function processUserInput(callback) {
+  let name = alert("Please enter your name.");
+  callback(name);
+}
+
+processUserInput(greeting);
+
+20. What are the uses of callback?
+Callbacks are generally used when the function needs to perform events before the callback is executed.
+
+It will be useful when we need to use the result of the first function into another function.
+
+For Example, setTimeout, setInterval, etc.
+
+
+21. Explain about JS promises?
+JS Promises:
+
+Promise is a way to handle Asynchronous operations.
+A promise is an object that represents a result of an operation that will be returned at some point in the future.
+
+A promise will be in any one of the three states:
+
+Pending: Neither fulfilled nor rejected
+Fulfilled: Operation completed successfully
+Rejected: Operation failed
+
+Example:
+
+const url = "https://apis.ccbp.in/jokes/random";
+let responseObject = fetch(url);
+
+console.log(responseObject); // Output: Promise{ [[PromiseStatus]]:pending, [[PromiseValue]]:undefined }
+console.log("fetching done"); // Output: fetching done
+
+22. When to use JS Promises?
+Promises are used to handle asynchronous operations in JavaScript. They can handle multiple asynchronous operations easily and provide better error handling than callbacks and events.
+
+23. What are the handling methods of a Promise?
+The methods promise.then(), promise.catch(), and promise.finally() are used to handle the promise that becomes settled.
+
+promise.then()
+
+The then method is called after the Promise is resolved.
+
+Example:
+
+const url = "https://apis.ccbp.in/jokes/random";
+let responsePromise = fetch(url);
+
+responsePromise.then((response) => {
+  console.log(response); // Output: Response{ … }
+});
+
+promise.catch()
+
+The catch method is called after the Promise is rejected.
+
+Fetching a resource can be failed for various reasons like:
+
+The URL is spelt incorrectly
+Server is taking too long to respond
+Network failure error, etc.
+
+Example:
+
+const url = "https://apis.ccbp.in/jokes/random";
+let responsePromise = fetch(url);
+
+responsePromise.then((response) => {
+  console.log(response);
+});
+responsePromise.catch((error) => {
+  console.log(error); // TypeError{ "Failed to fetch" }
+});
+
+
+
+
+
+
+
+
