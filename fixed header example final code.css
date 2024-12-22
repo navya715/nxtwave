@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.page-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-navbar {
+  background-color: #0d2436;
+  font-family: "Roboto";
+  font-size: 20px;
+  color: white;
+  padding: 20px;
+}
+
+.page-body {
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+}
+
+.sidebar {
+  width: 150px;
+  padding: 20px;
+  background-color: #e8edf9;
+  font-family: "Roboto";
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.content {
+  padding: 20px;
+  background-color: #f6f8fa;
+  font-family: "Roboto";
+  font-size: 18px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.page-footer {
+  background-color: #0d2436;
+  font-family: "Roboto";
+  font-size: 20px;
+  color: white;
+  padding: 20px;
+}
